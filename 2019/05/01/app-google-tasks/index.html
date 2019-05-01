@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前不久，Google推出了一款移动任务管理应用Google Task，在使用2天后，写一下使用感受，并与Google同类产品Keep进行一个对比。  首先欣赏几张官方的App截图     然后来看一下官方的介绍：  翻译：通过Google Tasks移动应用程序完成更多任务。随时随地管理，捕捉和编辑您的任务，以及在所有设备上同步的待办事项。与Gmail和Google日历的集成可帮助您更快地完成任">
+<meta property="og:type" content="article">
+<meta property="og:title" content="App推荐 | Google Tasks">
+<meta property="og:url" content="http://yoursite.com/2019/05/01/app-google-tasks/index.html">
+<meta property="og:site_name" content="Mayandev&#39;s Blog">
+<meta property="og:description" content="前不久，Google推出了一款移动任务管理应用Google Task，在使用2天后，写一下使用感受，并与Google同类产品Keep进行一个对比。  首先欣赏几张官方的App截图     然后来看一下官方的介绍：  翻译：通过Google Tasks移动应用程序完成更多任务。随时随地管理，捕捉和编辑您的任务，以及在所有设备上同步的待办事项。与Gmail和Google日历的集成可帮助您更快地完成任">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150233943.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/2018042915021942.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/2018042915021120.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150203287.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/2018042915024339.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150319755.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429145332772.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150334112.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429145345183.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150319755.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150355142.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150419728.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150428257.png">
+<meta property="og:updated_time" content="2019-05-01T08:32:14.722Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="App推荐 | Google Tasks">
+<meta name="twitter:description" content="前不久，Google推出了一款移动任务管理应用Google Task，在使用2天后，写一下使用感受，并与Google同类产品Keep进行一个对比。  首先欣赏几张官方的App截图     然后来看一下官方的介绍：  翻译：通过Google Tasks移动应用程序完成更多任务。随时随地管理，捕捉和编辑您的任务，以及在所有设备上同步的待办事项。与Gmail和Google日历的集成可帮助您更快地完成任">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150233943.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/05/01/app-google-tasks/">
+
+
+
+
+
+  <title>App推荐 | Google Tasks | Mayandev's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Mayandev's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有趣的灵魂</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/01/app-google-tasks/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mayandev">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/imagesWechatIMG222.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mayandev's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">App推荐 | Google Tasks</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-01T16:21:51+08:00">
+                2019-05-01
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-01T16:32:14+08:00">
+                2019-05-01
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/01/app-google-tasks/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/01/app-google-tasks/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  711
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>前不久，Google推出了一款移动任务管理应用Google Task，在使用2天后，写一下使用感受，并与Google同类产品Keep进行一个对比。</p>
+</blockquote>
+<p>首先欣赏几张官方的App截图</p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150233943.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/2018042915021942.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/2018042915021120.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150203287.png" alt></p>
+<p>然后来看一下官方的介绍：</p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/2018042915024339.png" alt></p>
+<p>翻译：通过Google Tasks移动应用程序完成更多任务。随时随地管理，捕捉和编辑您的任务，以及在所有设备上同步的待办事项。与Gmail和Google日历的集成可帮助您更快地完成任务。</p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150319755.png" alt></p>
+<p>经过两天的使用，这里简单的说一下感受。首先就界面来说，Tasks采用Google一直提倡的极简风格。打开App，纯白的界面，加上一颗蓝色的圆腰按钮的点缀，整体的页面显得极其的简约。</p>
+<p>熟悉Google的童鞋应该会发现，这个App的设计风格与之前Google一直所倡导的Material Design（以下简称为MD）风格还是有一些不一样。的确，在Android9.0（Android P）还没发布预览版之前，Google一直所采用的是一种扁平化的质感设计。</p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429145332772.gif" alt></p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150334112.gif" alt></p>
+<p>光效、表面质感、运动感是MD的核心。可以看到，这种风格大部分由矩形卡片组成，同时配色突出鲜明。但是在新出的Android P中，Google改进了这种设计，称之为MD2.0。其中大量地采用圆角设计，不论是通知面板、设置还是应用图标，全部使用圆形设计。</p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429145345183.gif" alt></p>
+<p>以后会更具详细的讲解Android P与之前Android版本的区别，这里便不再做赘述，下面继续介绍Tasks的功能。</p>
+<p>首先点击醒目的蓝色按钮，建立一个新的任务。例如：Spring大作业。点击加号日历图标可以设置截止日期，这里设置4月30号完成，并点击save。</p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150319755.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150355142.png" alt></p>
+<p>可以到任务详细页面里增添子任务，即不同时间段的该完成的任务，然后给各个子任务设置不同的时间期限，App就将会在不同的时间对你进行相应的提示，每天应该完成哪些任务。</p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150419728.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180429150428257.png" alt></p>
+<p>以上就是Tasks的主要功能，操作十分的简便，用起来很流畅，App本身的体积只有不到5M，因此不会占用很大的内存空间。而且Google自家的应用，优化做的可是相当的好，不用担心会发生卡顿的现象，也不会一直留驻后台。（PS：与Google全家桶一同食用效果更佳）</p>
+<p>Google还有一款与Tasks功能相似的App，名字叫做Keep。但是这款App不仅仅针对任务，还包括一些灵光一现的想法，可以立即使用Keep记录下来。这个应用有时间还会单独给大家介绍。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images%E6%9C%AA%E6%A0%87%E9%A2%98-1.png" alt="Mayandev wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎扫码关注我的公众号「嗜码」</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请我喝杯快乐水</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/imagesmm_reward_qrcode_1556675742137.png" alt="Mayandev 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/imagesqq_pic_merged_1556675948496.jpg" alt="Mayandev 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/24/mp-learning/" rel="next" title="小程序学习路线">
+                <i class="fa fa-chevron-left"></i> 小程序学习路线
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/imagesWechatIMG222.jpeg" alt="Mayandev">
+            
+              <p class="site-author-name" itemprop="name">Mayandev</p>
+              <p class="site-description motion-element" itemprop="description">自律给我自由</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Mayandev" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/phillzou" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:phillzou@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.weibo.com/6058985708/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-globe"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mayandev</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">5.2k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'VXHvttWyovWrbln4KWRLwW6F-gzGzoHsz',
+        appKey: 'XxGB1GqDmeRTTp1js5oWDxNV',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
