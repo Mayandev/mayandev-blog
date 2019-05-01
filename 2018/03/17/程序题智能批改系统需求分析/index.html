@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="需求分析,在线编程,系统,">
 
 
 
@@ -79,16 +79,31 @@
 
 
 
-<meta name="description" content="自律给我自由">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mayandev&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1 需求分析1.1 系统简介在计算机教育领域，尤其是程序设计类课程，教学内容基本上是理论与实践相结合。对于的传统的手动批改源代码和程序的方式通常会耗费教师巨大的精力，也难以保证结果公正性，因此程序题自动批改系统备受关注。目前应用较为广泛的的程序自动批改系统是ACM/ICMP的Online Judge程序批改系统，但是在多数的程序设计类课程中，ACM/ICMP并不适用。ACM/ICMP系统只能够处理">
+<meta name="keywords" content="需求分析,在线编程,系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="程序题智能批改系统需求分析">
+<meta property="og:url" content="http://yoursite.com/2018/03/17/程序题智能批改系统需求分析/index.html">
 <meta property="og:site_name" content="Mayandev&#39;s Blog">
-<meta property="og:description" content="自律给我自由">
+<meta property="og:description" content="1 需求分析1.1 系统简介在计算机教育领域，尤其是程序设计类课程，教学内容基本上是理论与实践相结合。对于的传统的手动批改源代码和程序的方式通常会耗费教师巨大的精力，也难以保证结果公正性，因此程序题自动批改系统备受关注。目前应用较为广泛的的程序自动批改系统是ACM/ICMP的Online Judge程序批改系统，但是在多数的程序设计类课程中，ACM/ICMP并不适用。ACM/ICMP系统只能够处理">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images20180422171225305.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images2018050121442219.png">
+<meta property="og:image" content="https://img-blog.csdn.net/20180501214451857?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3OTU0MDg2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images2018042217135869.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images20180422171341345.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images20180422171323300.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images20180422171332950.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images20180422171349979.png">
+<meta property="og:image" content="https://img-blog.csdn.net/2018042421491297?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3OTU0MDg2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180501215209469?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3OTU0MDg2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180424214936629?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3OTU0MDg2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/2018042421501017?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3OTU0MDg2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:updated_time" content="2019-05-01T07:07:05.492Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mayandev&#39;s Blog">
-<meta name="twitter:description" content="自律给我自由">
+<meta name="twitter:title" content="程序题智能批改系统需求分析">
+<meta name="twitter:description" content="1 需求分析1.1 系统简介在计算机教育领域，尤其是程序设计类课程，教学内容基本上是理论与实践相结合。对于的传统的手动批改源代码和程序的方式通常会耗费教师巨大的精力，也难以保证结果公正性，因此程序题自动批改系统备受关注。目前应用较为广泛的的程序自动批改系统是ACM/ICMP的Online Judge程序批改系统，但是在多数的程序设计类课程中，ACM/ICMP并不适用。ACM/ICMP系统只能够处理">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images20180422171225305.png">
 
 
 
@@ -118,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/03/17/程序题智能批改系统需求分析/">
 
 
 
 
 
-  <title>Mayandev's Blog</title>
+  <title>程序题智能批改系统需求分析 | Mayandev's Blog</title>
   
 
 
@@ -143,8 +158,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +251,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,9 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/17/程序题智能批改系统需求分析/" itemprop="url">程序题智能批改系统需求分析</a></h1>
+          <h1 class="post-title" itemprop="name headline">程序题智能批改系统需求分析</h1>
         
 
         <div class="post-meta">
@@ -407,9 +419,7 @@
       
 
       
-        
-          
-            <h1 id="1-需求分析"><a href="#1-需求分析" class="headerlink" title="1 需求分析"></a>1 需求分析</h1><h2 id="1-1-系统简介"><a href="#1-1-系统简介" class="headerlink" title="1.1 系统简介"></a>1.1 系统简介</h2><p>在计算机教育领域，尤其是程序设计类课程，教学内容基本上是理论与实践相结合。对于的传统的手动批改源代码和程序的方式通常会耗费教师巨大的精力，也难以保证结果公正性，因此程序题自动批改系统备受关注。目前应用较为广泛的的程序自动批改系统是ACM/ICMP的Online Judge程序批改系统，但是在多数的程序设计类课程中，ACM/ICMP并不适用。ACM/ICMP系统只能够处理标准的输入输出程序，并且给出对或错两种结果，无法像手工批改一样，对各方面进行打分，同时给出具体的分数以及错误原因。</p>
+        <h1 id="1-需求分析"><a href="#1-需求分析" class="headerlink" title="1 需求分析"></a>1 需求分析</h1><h2 id="1-1-系统简介"><a href="#1-1-系统简介" class="headerlink" title="1.1 系统简介"></a>1.1 系统简介</h2><p>在计算机教育领域，尤其是程序设计类课程，教学内容基本上是理论与实践相结合。对于的传统的手动批改源代码和程序的方式通常会耗费教师巨大的精力，也难以保证结果公正性，因此程序题自动批改系统备受关注。目前应用较为广泛的的程序自动批改系统是ACM/ICMP的Online Judge程序批改系统，但是在多数的程序设计类课程中，ACM/ICMP并不适用。ACM/ICMP系统只能够处理标准的输入输出程序，并且给出对或错两种结果，无法像手工批改一样，对各方面进行打分，同时给出具体的分数以及错误原因。</p>
 <p>因此，设计一个程序题智能批改系统，采用提交-反馈的模式，让学生在离开老师的情况下，可以自己编写程序并交给系统进行批改，同时教师可在后台查看学生的学习情况，并予以反馈。这不仅提高了学生编写程序的积极性，也驱动学生去深入学习编程，大大减轻了教师的工作量。</p>
 <h2 id="1-2-需求说明"><a href="#1-2-需求说明" class="headerlink" title="1.2 需求说明"></a>1.2 需求说明</h2><p>程序题智能批改系统可用于让学生在没有老师的监督下，独立编写程序并通过系统提交给后台。教师在后台可查看学生的学习情况，并针对不同学生的答题情况予以反馈。主要需求如下：</p>
 <ul>
@@ -830,8 +840,6 @@
 <p>本人对下述需求进行了代码实现，使用ssm框架。涉及到Java的动态编译方面的知识，另外，评分通过获取后台数据库中的测试用例，动态执用例进行评分。</p>
 <p>需要源码的可以扫码关注公众号『嗜码』，回复「<strong>程序题批改系统</strong>」即可获取源码，源码使用的 spring mvc 框架。</p>
 
-          
-        
       
     </div>
     
@@ -839,21 +847,68 @@
     
 
     
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images%E6%9C%AA%E6%A0%87%E9%A2%98-1.png" alt="Mayandev wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎扫码关注我的公众号「嗜码」</div>
+</div>
 
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请我喝杯快乐水</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/imagesmm_reward_qrcode_1556675742137.png" alt="Mayandev 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/imagesqq_pic_merged_1556675948496.jpg" alt="Mayandev 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/需求分析/" rel="tag"># 需求分析</a>
+          
+            <a href="/tags/在线编程/" rel="tag"># 在线编程</a>
+          
+            <a href="/tags/系统/" rel="tag"># 系统</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -863,10 +918,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -874,6 +930,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -894,8 +957,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -985,6 +1057,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-需求分析"><span class="nav-number">1.</span> <span class="nav-text">1 需求分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-系统简介"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 系统简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-需求说明"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 需求说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-用例分析"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 用例分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-1-用例与角色"><span class="nav-number">1.3.1.</span> <span class="nav-text">1.3.1 用例与角色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-2-用例图"><span class="nav-number">1.3.2.</span> <span class="nav-text">1.3.2 用例图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-3-用例描述"><span class="nav-number">1.3.3.</span> <span class="nav-text">1.3.3 用例描述</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-系统设计"><span class="nav-number">2.</span> <span class="nav-text">2 系统设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-实体关系建模"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 实体关系建模</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-数据库设计"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 数据库设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-界面设计"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 界面设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1-页面跳转关系"><span class="nav-number">2.3.1.</span> <span class="nav-text">2.3.1 页面跳转关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1-页面设计"><span class="nav-number">2.3.2.</span> <span class="nav-text">2.3.1 页面设计</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1134,6 +1222,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
