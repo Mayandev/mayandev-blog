@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Oracle,安装教程,">
+  <meta name="keywords" content="前端,js,学习笔记,">
 
 
 
@@ -79,35 +79,20 @@
 
 
 
-<meta name="description" content="1、安装准备下载官网的oracle安装程序，有两个压缩包。  选中这两个压缩包，点击解压到当前文件夹，两个压缩包同时解压成一个名叫database的文件夹。这里特别注意，两个压缩包要同时选中，解压成一个文件，不然可能会安装失败。 解压好后出现一个database文件夹，大小为2.13GB。  点进去，找到setup.exe，右击，以管理员身份运行，开始安装。 这里需要检查，等待一会。  检查之后如">
-<meta name="keywords" content="Oracle,安装教程">
+<meta name="description" content="今天学习了 JavaScript 的闭包，这里做一个自己理解的分享。  闭包是 JavaScript 中的一个难点，同样也是重点，很多的高级应用都需要使用闭包来实现。 变量的作用域要理解 JavaScript 中的闭包，就要先理解作用域。首先，我们要知道，JavaScript 没有块级作用域，这是什么意思？我们来看下面的代码： 1234567if (true) &amp;#123;  var name">
+<meta name="keywords" content="前端,js,学习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Oracle11g 64位安装教程以及安装过程中可能遇到的问题">
-<meta property="og:url" content="http://yoursite.com/2018/03/30/Oracle11g-64位安装教程以及安装过程中可能遇到的问题/index.html">
+<meta property="og:title" content="JavaScript 学习笔记（五）—— 闭包（closure）">
+<meta property="og:url" content="http://yoursite.com/2017/10/07/javascript-learning-5/index.html">
 <meta property="og:site_name" content="Mayandev&#39;s Blog">
-<meta property="og:description" content="1、安装准备下载官网的oracle安装程序，有两个压缩包。  选中这两个压缩包，点击解压到当前文件夹，两个压缩包同时解压成一个名叫database的文件夹。这里特别注意，两个压缩包要同时选中，解压成一个文件，不然可能会安装失败。 解压好后出现一个database文件夹，大小为2.13GB。  点进去，找到setup.exe，右击，以管理员身份运行，开始安装。 这里需要检查，等待一会。  检查之后如">
+<meta property="og:description" content="今天学习了 JavaScript 的闭包，这里做一个自己理解的分享。  闭包是 JavaScript 中的一个难点，同样也是重点，很多的高级应用都需要使用闭包来实现。 变量的作用域要理解 JavaScript 中的闭包，就要先理解作用域。首先，我们要知道，JavaScript 没有块级作用域，这是什么意思？我们来看下面的代码： 1234567if (true) &amp;#123;  var name">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images2018033010084020.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101016798.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101211145.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101241474.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101413545.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101721766.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101743977.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101807739.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101835733.png">
-<meta property="og:image" content="https://img-blog.csdn.net/20180330101952290">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101952290.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330102122299.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330102252627.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330102445674.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330102834828.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330103002599.png">
-<meta property="og:updated_time" content="2019-05-01T07:51:14.218Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning5-1.png">
+<meta property="og:updated_time" content="2019-05-02T03:13:47.157Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Oracle11g 64位安装教程以及安装过程中可能遇到的问题">
-<meta name="twitter:description" content="1、安装准备下载官网的oracle安装程序，有两个压缩包。  选中这两个压缩包，点击解压到当前文件夹，两个压缩包同时解压成一个名叫database的文件夹。这里特别注意，两个压缩包要同时选中，解压成一个文件，不然可能会安装失败。 解压好后出现一个database文件夹，大小为2.13GB。  点进去，找到setup.exe，右击，以管理员身份运行，开始安装。 这里需要检查，等待一会。  检查之后如">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images2018033010084020.png">
+<meta name="twitter:title" content="JavaScript 学习笔记（五）—— 闭包（closure）">
+<meta name="twitter:description" content="今天学习了 JavaScript 的闭包，这里做一个自己理解的分享。  闭包是 JavaScript 中的一个难点，同样也是重点，很多的高级应用都需要使用闭包来实现。 变量的作用域要理解 JavaScript 中的闭包，就要先理解作用域。首先，我们要知道，JavaScript 没有块级作用域，这是什么意思？我们来看下面的代码： 1234567if (true) &amp;#123;  var name">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning5-1.png">
 
 
 
@@ -137,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/30/Oracle11g-64位安装教程以及安装过程中可能遇到的问题/">
+  <link rel="canonical" href="http://yoursite.com/2017/10/07/javascript-learning-5/">
 
 
 
 
 
-  <title>Oracle11g 64位安装教程以及安装过程中可能遇到的问题 | Mayandev's Blog</title>
+  <title>JavaScript 学习笔记（五）—— 闭包（closure） | Mayandev's Blog</title>
   
 
 
@@ -270,7 +255,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/Oracle11g-64位安装教程以及安装过程中可能遇到的问题/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/07/javascript-learning-5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mayandev">
@@ -287,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Oracle11g 64位安装教程以及安装过程中可能遇到的问题</h1>
+          <h1 class="post-title" itemprop="name headline">JavaScript 学习笔记（五）—— 闭包（closure）</h1>
         
 
         <div class="post-meta">
@@ -299,8 +284,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-30T10:32:28+08:00">
-                2018-03-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-07T18:21:20+08:00">
+                2017-10-07
               </time>
             
 
@@ -315,8 +300,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-05-01T15:51:14+08:00">
-                2019-05-01
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-02T11:13:47+08:00">
+                2019-05-02
               </time>
             
           </span>
@@ -334,8 +319,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Oracle/" itemprop="url" rel="index">
-                    <span itemprop="name">Oracle</span>
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
@@ -352,8 +337,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/30/Oracle11g-64位安装教程以及安装过程中可能遇到的问题/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/30/Oracle11g-64位安装教程以及安装过程中可能遇到的问题/" itemprop="commentCount"></span>
+                <a href="/2017/10/07/javascript-learning-5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/10/07/javascript-learning-5/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -375,7 +360,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  729
+                  864
                 </span>
               
 
@@ -391,7 +376,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -412,49 +397,36 @@
       
 
       
-        <h1 id="1、安装准备"><a href="#1、安装准备" class="headerlink" title="1、安装准备"></a>1、安装准备</h1><p>下载官网的oracle安装程序，有两个压缩包。</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images2018033010084020.png" alt></p>
-<p>选中这两个压缩包，点击解压到当前文件夹，两个压缩包同时解压成一个名叫database的文件夹。<strong><code>这里特别注意，两个压缩包要同时选中，解压成一个文件，不然可能会安装失败。</code></strong></p>
-<p>解压好后出现一个database文件夹，大小为2.13GB。</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101016798.png" alt></p>
-<p>点进去，找到setup.exe，右击，<strong><code>以管理员身份运行</code></strong>，开始安装。</p>
-<p>这里需要检查，等待一会。</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101211145.png" alt></p>
-<p>检查之后如果出现环境不满足最低要求的警告（如下图）</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101241474.png" alt></p>
-<p>先取消安装，我们需要修改文件<strong><code>database---&gt;stage---&gt;cvu---&gt;cvu_prereq.xml</code></strong>中的内容。右键用编辑器打开，在此处加上如下代码。</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101413545.png" alt></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">OPERATING_SYSTEM</span> <span class="attr">RELEASE</span>=<span class="string">"6.2"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">VERSION</span> <span class="attr">VALUE</span>=<span class="string">"3"</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ARCHITECTURE</span> <span class="attr">VALUE</span>=<span class="string">"64-bit"</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">NAME</span> <span class="attr">VALUE</span>=<span class="string">"Windows 10"</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ENV_VAR_LIST</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">ENV_VAR</span> <span class="attr">NAME</span>=<span class="string">"PATH"</span> <span class="attr">MAX_LENGTH</span>=<span class="string">"1023"</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ENV_VAR_LIST</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">OPERATING_SYSTEM</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h1 id="2、开始安装"><a href="#2、开始安装" class="headerlink" title="2、开始安装"></a>2、开始安装</h1><p>将接收安全更新的选项取消，可选操作。点击下一步</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101721766.png" alt></p>
-<p>可以无视警告，点击是。</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101743977.png" alt></p>
-<p>选择第一项，创建和配置数据库，并点击下一步。</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101807739.png" alt></p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101835733.png" alt></p>
-<p>修改安装目录，<strong><code>千万注意，这里的目录不能出现中文字符</code></strong>。其他的选项默认就行，另外还需要输入管理员的密码。尽量设置简单一点的，容易记住。<strong><code>密码一定要记住!!!</code></strong></p>
-<p><img src="https://img-blog.csdn.net/20180330101952290" alt="这里写图片描述"></p>
-<p>出现密码不符合标准不要紧，这是由于oracl为了安全，这里我们直接继续。然后系统会检查条件。如果失败了，<strong><code>点击全部忽略，不影响后面的安装。</code></strong></p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330101952290.png" alt></p>
-<p>点击完成就开始安装了</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330102122299.png" alt></p>
-<p>后面的都直接默认就行了，<strong><code>一定要记住输入的密码。</code></strong></p>
-<h1 id="3-检查是否安装成功。"><a href="#3-检查是否安装成功。" class="headerlink" title="3.检查是否安装成功。"></a>3.检查是否安装成功。</h1><p>在开始菜单里找到Oracle文件夹，然后点击这个orcl</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330102252627.png" alt></p>
-<p>会弹出一个网页，需要输入账号密码，以管理员身份登录，账号为<code>sys</code>或者<code>system</code>，密码是自己设置的，如果忘了可以通过命令重置。</p>
-<p>登录后进入控制台，如果界面是这样子，就是成功了。</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330102445674.png" alt></p>
-<h1 id="4-安装过程中可能遇到的问题"><a href="#4-安装过程中可能遇到的问题" class="headerlink" title="4.安装过程中可能遇到的问题"></a>4.安装过程中可能遇到的问题</h1><ol>
-<li>安装到42%的时候<code>出现未找到文件wfmlrsvcapp.ear报错。</code></li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">解决办法：</span><br><span class="line">点击中止安装，然后将win64_11gR2_database_2of2</span><br><span class="line">文件database/stage/Components/下的几个文件</span><br><span class="line">copy到之前解压的database文件夹中相同目录下，</span><br><span class="line">然后重新安装，不用删任何东西，重新安装会覆盖之前的安装。</span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330102834828.png" alt></p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images/20180330103002599.png" alt></p>
-<ol start="2">
-<li>安装到98%时出现<code>注册OCX时出现OLE初始化错误或OCX加载错误。</code></li>
-</ol>
-<p>解决办法：点击中止安装，错误原因是安装路径中有中文字符，重新安装，修改一下路径就行了。</p>
-<p>以上就是Oracle11g 64位的安装教程，欢迎各位对问题进行补充。</p>
+        <blockquote>
+<p>今天学习了 JavaScript 的闭包，这里做一个自己理解的分享。</p>
+</blockquote>
+<p>闭包是 JavaScript 中的一个难点，同样也是重点，很多的高级应用都需要使用闭包来实现。</p>
+<h1 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h1><p>要理解 JavaScript 中的闭包，就要先理解作用域。首先，我们要知道，JavaScript 没有块级作用域，这是什么意思？我们来看下面的代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> name = <span class="string">'zmy'</span>;</span><br><span class="line">  alert(name);    <span class="comment">// zmy</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">alert(name);    <span class="comment">// zmy</span></span><br></pre></td></tr></table></figure>
+<p>结果输出了两次 ‘zmy’</p>
+<p>可以看到，在 if 语句块里声明的 name 变量，在语句块外面依然能够访问。这是因为 JavaScript 不存在块级作用域，在块中定义的变量，快外依然能够访问到。</p>
+<p>在看看 Java 语句代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">        String name = <span class="string">"zmy"</span>;</span><br><span class="line">        System.out.print(name);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.print(name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行代码，结果显示报错，找不到符号 name。</p>
+<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning5-1.png" alt></p>
+<p>这是因为 Java 有块级作用域，变量只会存在当前的块级作用域中，外部不能直接访问。</p>
+<p>JavaScript 中的作用域相对于其他的块级语言来说比较特殊，它虽然没有块级作用域，但是存在函数作用域。这是什么意思呢，来看一下下面的这段代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayPersonName</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> personName =<span class="string">'zmy'</span>;</span><br><span class="line">&#125;</span><br><span class="line">sayPersonName();</span><br><span class="line">alert(personName);    <span class="comment">// error</span></span><br></pre></td></tr></table></figure>
+<p>运行结果如下报错，显示 person Name 未定义。这是因为 JavaScript 中存在函数作用域，函数外部不能访问函数内部的变量。</p>
+<p>这里值得注意的是，函数重点变量名需要关键词 var，如无此关键词，则默认为 全局变量，因此下面的代码是能够访问的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayPersonName</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  personName = <span class="string">'zmy'</span>;</span><br><span class="line">&#125;</span><br><span class="line">sayPersonName();</span><br><span class="line">alert(personName);    <span class="comment">// 'zmy'</span></span><br></pre></td></tr></table></figure>
+<h1 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h1><p>由上诉阐述引出了一个问题，我们如何才能够访问到函数里的变量？前面已经证明，我们不能够直接访问到变量，这样会引发错误。因此，我们可以使用闭包。</p>
+<p>首先理解一下闭包的概念：是指有权访问另一个函数作用域中的变量的函数。</p>
+<p>说的直白一点，闭包其实就是一个函数，而常见的创建闭包的方式就是在函数内部创建另一个函数。例如下面代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">outerFunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> n = <span class="number">1</span>;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">innerFunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(n);   <span class="comment">// 1</span></span><br><span class="line">  &#125;</span><br><span class="line">  innerFunc();</span><br><span class="line">&#125;</span><br><span class="line">outerFunc();</span><br></pre></td></tr></table></figure>
+<p>上面代码在 outerFunc () 中声明了一个 innerFunc () 函数以及一个变量，然后调用外层函数，输出了 n。</p>
+<p>因此可以看出，内存函数能够访问外层函数变量。但反过来不行，内部函数变量对外部函数不可见。</p>
+<p>这就是 Javascript 语言特有的 “链式作用域” 结构（chain scope），子对象会一级一级地向上寻找所有父对象的变量。所以，父对象的所有变量，对子对象都是可见的，反之则不成立。</p>
+<p>既然内层函数能够返回外层函数的变量，那我们如果把 innerFunc () 作为返回值，上面的问题就可以解决了。</p>
+<p>例如下面代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">outerFunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> n = <span class="number">1</span>;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">innerFunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(n);   <span class="comment">// 1</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> innerFunc;   </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> result = outerFunc();</span><br><span class="line">result();    <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+<p>可以看到，上面的代码将 innerFunc 作为 outerFunc () 的返回值，因此变量 result 变成一个函数，即 innerFunc ()。通过调用 result () 就可以访问 n 了。</p>
+<p>以上是个人对闭包对理解，望多多指教！</p>
 
       
     </div>
@@ -509,9 +481,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Oracle/" rel="tag"># Oracle</a>
+            <a href="/tags/前端/" rel="tag"># 前端</a>
           
-            <a href="/tags/安装教程/" rel="tag"># 安装教程</a>
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/学习笔记/" rel="tag"># 学习笔记</a>
           
         </div>
       
@@ -524,8 +498,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/17/程序题智能批改系统需求分析/" rel="next" title="程序题智能批改系统需求分析">
-                <i class="fa fa-chevron-left"></i> 程序题智能批改系统需求分析
+              <a href="/2017/10/05/javascript-learning-4/" rel="next" title="Javascript 学习笔记 (四)—— 面向对象">
+                <i class="fa fa-chevron-left"></i> Javascript 学习笔记 (四)—— 面向对象
               </a>
             
           </div>
@@ -534,8 +508,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/20/公众号关联小程序教程/" rel="prev" title="公众号关联小程序教程">
-                公众号关联小程序教程 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/11/17/javascript-learning-6/" rel="prev" title="javascript-learning-6">
+                javascript-learning-6 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -618,7 +592,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -629,7 +603,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -640,7 +614,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -701,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、安装准备"><span class="nav-number">1.</span> <span class="nav-text">1、安装准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、开始安装"><span class="nav-number">2.</span> <span class="nav-text">2、开始安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-检查是否安装成功。"><span class="nav-number">3.</span> <span class="nav-text">3.检查是否安装成功。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-安装过程中可能遇到的问题"><span class="nav-number">4.</span> <span class="nav-text">4.安装过程中可能遇到的问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#变量的作用域"><span class="nav-number">1.</span> <span class="nav-text">变量的作用域</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#闭包"><span class="nav-number">2.</span> <span class="nav-text">闭包</span></a></li></ol></div>
             
 
           </div>
@@ -735,7 +709,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.5k</span>
+    <span title="Site words total count">13k</span>
   
 </div>
 
