@@ -87,12 +87,12 @@
 <meta property="og:site_name" content="Mayandev&#39;s Blog">
 <meta property="og:description" content="今天学习了 JavaScript 的闭包，这里做一个自己理解的分享。  闭包是 JavaScript 中的一个难点，同样也是重点，很多的高级应用都需要使用闭包来实现。 变量的作用域要理解 JavaScript 中的闭包，就要先理解作用域。首先，我们要知道，JavaScript 没有块级作用域，这是什么意思？我们来看下面的代码： 1234567if (true) &amp;#123;  var name">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning5-1.png">
+<meta property="og:image" content="https://mayandev.github.io/images/loading.gif">
 <meta property="og:updated_time" content="2019-05-02T03:13:47.157Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 学习笔记（五）—— 闭包（closure）">
 <meta name="twitter:description" content="今天学习了 JavaScript 的闭包，这里做一个自己理解的分享。  闭包是 JavaScript 中的一个难点，同样也是重点，很多的高级应用都需要使用闭包来实现。 变量的作用域要理解 JavaScript 中的闭包，就要先理解作用域。首先，我们要知道，JavaScript 没有块级作用域，这是什么意思？我们来看下面的代码： 1234567if (true) &amp;#123;  var name">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning5-1.png">
+<meta name="twitter:image" content="https://mayandev.github.io/images/loading.gif">
 
 
 
@@ -440,7 +440,7 @@
 <p>在看看 Java 语句代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">        String name = <span class="string">"zmy"</span>;</span><br><span class="line">        System.out.print(name);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.print(name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>运行代码，结果显示报错，找不到符号 name。</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning5-1.png" alt></p>
+<p><img src="/images/loading.gif" data-original="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning5-1.png" alt></p>
 <p>这是因为 Java 有块级作用域，变量只会存在当前的块级作用域中，外部不能直接访问。</p>
 <p>JavaScript 中的作用域相对于其他的块级语言来说比较特殊，它虽然没有块级作用域，但是存在函数作用域。这是什么意思呢，来看一下下面的这段代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayPersonName</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> personName =<span class="string">'zmy'</span>;</span><br><span class="line">&#125;</span><br><span class="line">sayPersonName();</span><br><span class="line">alert(personName);    <span class="comment">// error</span></span><br></pre></td></tr></table></figure>
@@ -1267,5 +1267,5 @@
 
   
 
-</body>
+<script>!function(e){var l=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var r=0;r<l.length;r++)t=l[r],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(t){var n,e,i,o,c=l[r];n=c,e=function(){l=l.filter(function(t){return c!==t})},i=new Image,o=n.getAttribute("data-original"),i.onload=function(){n.src=o,e&&e()},i.src=o}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script></body>
 </html>

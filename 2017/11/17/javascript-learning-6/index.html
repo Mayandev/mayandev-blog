@@ -87,13 +87,13 @@
 <meta property="og:site_name" content="Mayandev&#39;s Blog">
 <meta property="og:description" content="Javascript 与 HTML 之间的交互是通过事件来实现的。平时用多了JQuery，JavaScript 往往会变得生疏，有时候会不是很理解某些事件的写法，这里将学习过程做个记录。  DOM0 级事件事件处理的传统方式，也就是 DOM0 级事件模型，通过将一个函数赋值给一个事件处理程序属性，来实现事件的处理逻辑。这种方式十分简单，并且所有浏览器都适用。例如下面代码： 1234varbutt">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning6-1.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning6-2.png">
+<meta property="og:image" content="https://mayandev.github.io/images/loading.gif">
+<meta property="og:image" content="https://mayandev.github.io/images/loading.gif">
 <meta property="og:updated_time" content="2019-05-02T03:30:18.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 学习笔记（六）—— 事件">
 <meta name="twitter:description" content="Javascript 与 HTML 之间的交互是通过事件来实现的。平时用多了JQuery，JavaScript 往往会变得生疏，有时候会不是很理解某些事件的写法，这里将学习过程做个记录。  DOM0 级事件事件处理的传统方式，也就是 DOM0 级事件模型，通过将一个函数赋值给一个事件处理程序属性，来实现事件的处理逻辑。这种方式十分简单，并且所有浏览器都适用。例如下面代码： 1234varbutt">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning6-1.png">
+<meta name="twitter:image" content="https://mayandev.github.io/images/loading.gif">
 
 
 
@@ -448,7 +448,7 @@
 <h2 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h2><p>在网上看到一句这样的话来形容事件流，感觉十分的形象：<code>在一张纸上有一组同心圆，如果你把手指放到圆心上，那么你的手指指向的不是一个圆，而是纸上所有的圆。</code>比如我们点击了页面中的某一个按钮，我们不仅点击了按钮，还点击了包含按钮的容器，甚至还点击了整个页面窗口。</p>
 <p>所谓事件流就是接受事件的顺序。DOM2 级事件中规定事件流包括三个阶段：捕获阶段、目标阶段、冒泡阶段。</p>
 <p>看一张图，便能很好的理解事件流。</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning6-1.png" alt></p>
+<p><img src="/images/loading.gif" data-original="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning6-1.png" alt></p>
 <p>如图所示，当一个事件触发时，最先得到消息的是 Document，然后是 HTML， 一层一层，找到触发事件的元素，这个过程属于事件<strong>捕获阶段</strong>。之后，便是对事件处理的逻辑，这是目标阶段。最后，事件会向上传播，通知上层元素事件处理完毕，这是事件<strong>冒泡阶段</strong>。</p>
 <h2 id="DOM2-级事件方式"><a href="#DOM2-级事件方式" class="headerlink" title="DOM2 级事件方式"></a>DOM2 级事件方式</h2><p>DOM2 级事件定义了 addEventListener 和 removeEventListener 两个方法，用于为指定元素添加事件绑定和删除事件绑定。例如下面代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">varbutton = <span class="built_in">document</span>.getElementById(<span class="string">"buttonId"</span>);</span><br><span class="line">button.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  alert(<span class="string">"clicked"</span>);</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
@@ -456,7 +456,7 @@
 <p>通过下面例子，来理解一些这个函数：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"inner"</span>;"&gt;</span> 内部 DIV<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>这里定义了两个 div，id 分别为 outer 和 inner，效果如图：</p>
-<p><img src="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning6-2.png" alt></p>
+<p><img src="/images/loading.gif" data-original="https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/blog/javascript-learning6-2.png" alt></p>
 <p>然后为每个 div 添加事件</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> inner = <span class="built_in">document</span>.getElementById(<span class="string">"inner"</span>);</span><br><span class="line"><span class="keyword">var</span> outer = <span class="built_in">document</span>.getElementById(<span class="string">"outer"</span>);</span><br><span class="line">inner.addEventListener(<span class="string">"onclick"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  alert(<span class="string">"1"</span>);</span><br><span class="line">&#125;,<span class="literal">true</span>);</span><br><span class="line">outer.addEventListener(<span class="string">"onclick"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  alert(<span class="string">"2"</span>);</span><br><span class="line">&#125;, <span class="literal">true</span>);</span><br><span class="line">inner.addEventListener(<span class="string">"onclick"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  alert(<span class="string">"3"</span>);</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
 <p>之前提到了，DOM2 级别事件中同一个元素支持多个相同的事件，上面的代码为 inner 设置了两个点击事件，分别在捕获阶段和冒泡阶段响应。outer 元素的点击事件在捕获阶段响应。</p>
@@ -1272,5 +1272,5 @@
 
   
 
-</body>
+<script>!function(e){var l=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var r=0;r<l.length;r++)t=l[r],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(t){var n,e,i,o,c=l[r];n=c,e=function(){l=l.filter(function(t){return c!==t})},i=new Image,o=n.getAttribute("data-original"),i.onload=function(){n.src=o,e&&e()},i.src=o}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script></body>
 </html>
