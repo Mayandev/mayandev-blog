@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mayandev.github.io/2018/04/29/google-io-content/</loc>
+    
+    <lastmod>2019-05-02T14:19:19.628Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/05/15/app-one-woodhan/</loc>
+    
+    <lastmod>2019-05-02T14:18:23.427Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mayandev.github.io/2017/11/17/javascript-learning-6/</loc>
     
     <lastmod>2019-05-02T03:30:18.473Z</lastmod>
@@ -58,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/04/29/google-io-content/</loc>
-    
-    <lastmod>2019-05-01T08:38:52.936Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2018/04/29/app-google-tasks/</loc>
     
     <lastmod>2019-05-01T08:36:46.009Z</lastmod>
@@ -100,14 +107,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/tags/index.html</loc>
+    <loc>https://mayandev.github.io/categories/index.html</loc>
     
     <lastmod>2019-05-01T04:25:31.692Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/categories/index.html</loc>
+    <loc>https://mayandev.github.io/tags/index.html</loc>
     
     <lastmod>2019-05-01T04:25:31.692Z</lastmod>
     
