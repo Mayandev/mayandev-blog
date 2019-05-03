@@ -665,7 +665,7 @@
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
+    var guest = 'nick,mail';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
@@ -675,7 +675,7 @@
         notify: false,
         appId: 'VXHvttWyovWrbln4KWRLwW6F-gzGzoHsz',
         appKey: 'XxGB1GqDmeRTTp1js5oWDxNV',
-        placeholder: 'Just go go',
+        placeholder: '留下邮箱，有回复时您将收到提醒，邮箱不会被公开',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
