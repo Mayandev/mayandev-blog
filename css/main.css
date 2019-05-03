@@ -1943,7 +1943,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb1de;
+  background: #18a2c1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3240,4 +3240,20 @@ pre .javascript .function {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.ImageGrid {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: center;
+}
+.card {
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+  background-color: #ddd;
+}
+.ImageInCard img {
+  padding: 0 0 0 0;
+  border-radius: 8px;
 }
