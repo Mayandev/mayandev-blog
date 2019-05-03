@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mayandev.github.io/photos/photoslist.json</loc>
+    
+    <lastmod>2019-05-03T08:11:25.024Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/photos/index.html</loc>
+    
+    <lastmod>2019-05-03T03:14:33.812Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mayandev.github.io/2018/07/15/mp-add-banner-ad/</loc>
     
     <lastmod>2019-05-03T03:02:24.522Z</lastmod>
@@ -114,14 +128,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2017/09/28/javascript-learning-1/</loc>
+    <loc>https://mayandev.github.io/2017/09/29/javascript-learning-2/</loc>
     
     <lastmod>2019-05-02T02:24:07.609Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2017/09/29/javascript-learning-2/</loc>
+    <loc>https://mayandev.github.io/2017/09/28/javascript-learning-1/</loc>
     
     <lastmod>2019-05-02T02:24:07.609Z</lastmod>
     
