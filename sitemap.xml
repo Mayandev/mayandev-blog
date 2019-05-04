@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mayandev.github.io/photos/photoslist.json</loc>
+    
+    <lastmod>2019-05-04T15:03:14.284Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mayandev.github.io/2018/06/06/revealjs-make-ppt/</loc>
     
     <lastmod>2019-05-03T12:56:44.993Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://mayandev.github.io/2018/06/16/science-fuck-net/</loc>
     
     <lastmod>2019-05-03T12:55:11.983Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/photos/photoslist.json</loc>
-    
-    <lastmod>2019-05-03T12:44:15.166Z</lastmod>
     
   </url>
   
