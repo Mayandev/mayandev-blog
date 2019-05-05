@@ -1,21 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[mp-cloud-dev]]></title>
-    <url>%2F2019%2F05%2F05%2Fmp-cloud-dev%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[互联网 B 哥直播总结]]></title>
+    <url>%2F2019%2F01%2F13%2Fthoughts-about-b-ge-live%2F</url>
+    <content type="text"><![CDATA[昨天观看了互联网B哥(stormzhang，下文以张哥做称呼)的直播，对直播内容进行一个总结，也是为了让自己加深印象，或许会对大家有所启发。 学习张哥首先提到学习，学习不应带有功利性，不要想着学了就会有所收获，要有延迟满足的心态。利用碎片化时间，养成习惯，慢慢积累，量变引起质变。至于学习，把80%的经历投入到本专业工作中，20%的精力投入到自我提升方面。 圈子圈子很重要，不同的层次，有着不同的思维，可以看到不同的世界。在一个领域待久了，容易固化，去其他圈子看看，向不同领域的人学习，但是提升的本质在自己。抱着虚心学习的态度加入圈子，而不是以为加入圈子就飞黄腾达了。 信息差罗胖在跨年演讲也提到了信息差的概念：在中国，再普遍的常识，也至少有一亿的人不知道。因此有人会揣摩信息，利用信息差生意，从中牟利。例如有人付费开通微信支付分，有人付费找论文代写中介等等。 预测 产品。头条可能成为新的巨头，产品覆盖从1线到18线城市。即将推出新的社交产品，对标腾讯，保持关注即可 5G。19年5G还很难做到普及，但是会进入大众视野，会改变很多方面。首先是手机厂商，又有理由让大家换新的手机。其次，由于网速的提升，在物联网、智能家居、无人驾驶方面会带来较大的影响 消费。现在的年轻人的消费观念与上一辈有很大的差别，上一辈吃饱穿暖，年轻一辈追求生活的品味与质量，更多的是精神层次的享受。例如在看电影，购物等等的方面。 行业。在线教育是朝阳行业，去年有一篇很火的文章，讲的就是一块电子屏幕让山区的学生能够接收与城市学生同等水平的教育。正是有了在线教育，缩小了教育水平的差距，使得教育更趋于公平化。另外，知识付费在2018年兴起，今年也将持续发展。往广了说，知识付费也是一种在线教育。 更远的发展。AI会对很多行业产生冲击，需要掌握AI不能替代的能力。 其他内容张哥主要是对自己的一个复盘，这里就不在赘述，希望以上内容对大家有帮助或者启发。当然，不一定说了解趋势或者不断学习就能怎样怎样，理都懂，关键还要看自己的洞察力以及执行力。]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>感悟</tag>
+        <tag>总结</tag>
+        <tag>B 哥</tag>
+        <tag>直播</tag>
+      </tags>
   </entry>
   <entry>
-    <title><![CDATA[mp-flex-layout]]></title>
-    <url>%2F2019%2F05%2F05%2Fmp-flex-layout%2F</url>
-    <content type="text"><![CDATA[在做前端开发的过程中，页面设计与排版往往成为一大拦路虎。抛开色彩的搭配不说，最让人头疼的无非就是如何让元素在水平或者垂直方向上进行布局排列，并以一定的方式对齐，使得页面显得简洁有序。 在这几周小程序开发工作当中，我也碰到了这样的问题，主要是因为自己CSS功底不扎实，只对几个常用的属性较为熟悉，因此布局起来相当吃力。每次写页面，都要先找一大堆模板，最后堆叠出来的代码我自己都看得恶心。但渐渐的，发现别人的代码中都有使用到flex布局，稍做了解后，确实好用，很快就可以自己编写出好看的页面。 1、flex布局Flex是Flexible Box的缩写，意为”弹性盒子”。传统的布局解决方案是基于盒状模型，依赖 display、position、float这些属性。使用过的人就知道，用起来很不方便，没有响应式，并且对于一些特殊布局很难实现，比如，垂直居中。 之后W3C提出了一种新的方案—-Flex布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持。下面的例子通过微信小程序实现，网页端同理。 2、布局拆解在对页面进行编码前，通常需要对布局进行拆解，这也是关键的一步，我以下面的图片为例作讲解解。 上面截图是我为某公司制作的官网小程序其中的一部分，布局并不复杂，由外至内进行分析。首先整体布局是一整行，其中有三个子项水平排列，每个子项又可再次进行拆分。 子项同样的由外至内分析，最外层为一个圆形，中间内容可以看作是一个图标和一行文字垂直居中排列，最后的组件拆解图如下。 3、编码实现首先按找布局拆解的思路，先实现三个圆形组件的水平排列。平常我们想到的方式可能是使用浮动或者绝对布局进行定位，但是这样的方式对不同屏幕大小尺寸的设备不友好，容易出现布局错乱。下面使用flex布局看看是如何实现上面效果的。 小程序端页面代码如下，主要是定义几个容器，网页端同理（将view换成div即可）。 12345&lt;view class="circle_line"&gt; &lt;view class="circle"&gt;&lt;/view&gt; &lt;view class="circle"&gt;&lt;/view&gt; &lt;view class="circle"&gt;&lt;/view&gt;&lt;/view&gt; WXSS代码如下，网页端同理。1234567891011121314.circle_line &#123; /* 定义弹性布局，默认水平排列 */ display: flex; /* 设置主轴对齐方式，space-around表示两端对齐，项目间间隔相等 */ justify-content: space-around; /* 在交叉上的对齐方式 */ align-items: center;&#125;.circle &#123; width: 100px; height: 100px; border-radius: 50%; background:linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);&#125; 这时候页面的效果就如下图所示： 首先注意的是flex布局默认排列方式是水平排列。如果对justify-content以及align-item这两个属性可能比较模糊，这里我将第一个属性的所有属性值试一遍，看看效果，另外一个同理，只不过是在交叉轴方向上的对齐方式。 有了上面布局的基础，很快的便可以将圆形内部的图标以及文字进行布局。实现思路就是将图标以及文字放入一个弹性盒子，并将排列方式设置为垂直方向，然后设置居中对齐。wxml代码：123456789101112&lt;view class="circle"&gt; ...&lt;/view&gt;&lt;view class="circle"&gt; &lt;view class="circle_icon"&gt; &lt;image class="circle_icon_image" mode="scaleToFill" src="/images/android.png" /&gt; &lt;/view&gt; &lt;view class="circle_txt"&gt;安卓开发&lt;/view&gt;&lt;/view&gt;&lt;view class="circle"&gt; ...&lt;/view&gt; wxss代码：12345678910111213141516.circle &#123; ... display: flex; flex-direction: column; align-items: center; justify-content: center;&#125;.circle_icon_image &#123; height: 30px; width: 30px;&#125;.circle_txt &#123; color: #fff; text-align: center; font-size: 13px;&#125; 最后保存，就实现下面的效果啦！ 4、总结希望上面过程，不仅仅说是学会了一个什么样的布局，最为关键的还是布局拆解的步骤，因为很多前端的编写都需要有类似的思想。 更多的相关flex布局可以去一些学习网站上做详细了解，祝学习愉快！]]></content>
+    <title><![CDATA[小程序使用 ES6 新特性]]></title>
+    <url>%2F2019%2F01%2F04%2Fmp-es6%2F</url>
+    <content type="text"><![CDATA[ECMAScript 6（简称ES6）是于2015年6月正式发布的JavaScript语言的标准，正式名为ECMAScript 2015（ES2015）。 小程序在很久之前就支持了ES6了，因此在小程序的开发中，我们可以适当的使用ES6中的一些新特性，来简化代码，高效开发。 在使用微信开发者工具调试之前，记得先勾选上es6转es5选项，这样工具才会将es6语法进行转换。 1、模板对象模板字符串（template string）是增强版的字符串，用反引号（`）标识。它可以当作普通字符串使用，也可以用来定义多行字符串，或者在字符串中嵌入变量，这样就避免了使用大量的(+)来拼接字符串。例如下面的代码： 123456var wechat = '1349571206zmy';var qq = '1349571206',// es5console.log('my wechat is ' + wechat + ' and my qq is ' + qq);// es6console.lg(`my wechat is $&#123;wechat&#125; and my qq is $&#123;qq&#125;`); 2、默认参数在es6中，函数可以有默认的参数，这样就避免了认为的对参数进行判空或者其他处理。例如下面代码，封装了微信小程序原生的toast，默认传入title参数即可。123456789101112131415/** * 显示toast * @param &#123;string&#125; title toast标题 * @param &#123;string&#125; type toast类型 * @param &#123;number&#125; duration toast时长 * @param &#123;boolean&#125; mask 是否显示遮罩 */showToast(title, type='none', duration=1000, mask=false) &#123; wx.showToast(&#123; title: title, icon: type, duration: duration, mask: mask &#125;);&#125; 3、类ES6 提供了更接近传统语言的写法，引入了 Class（类）这个概念，作为对象的模板。通过class关键字，可以定义类。例如定义一个基础类，来封装微信小程序常用的方法，让代码有更高的复用性，也使代码更加简洁。与传统语言相似，支持继承。 1234567891011121314151617// base.jsclass Api &#123; // 显示toast showToast(title, type='none', duration=1000, mask=false) wx.showToast(&#123; title: title, icon: type, duration: duration, mask: mask &#125;); &#125; // ... // 导出 export &#123; Api &#125;;&#125; 定义好类后，可以在其他的js中进行调用。 123456789// index.js// 引用import &#123;Base&#125; from 'base';const base = new Base();// ...// 在函数中调用onLoad() &#123; base.showToast('toast');&#125; 4、解构赋值结解构就是按照一定模式，从数组和对象中提取变量进行赋值，通过解构我们可以让赋值更优雅便捷。例如下面的代码： 12345678// options=&#123;wechat:134957126zmy, email:phillzou@gmail.com&#125;onLoad(options) &#123; // es5获取值 let wechat = options.wechat; let email = options.email; // es6获取值 let &#123;wechat, email&#125; = options;&#125; 5、箭头函数ES6 允许使用“箭头”（=&gt;）定义函数。 123456// es6var sum = (num1, num2) =&gt; num1 + num2;// es5var sum = function(num1, num2) &#123; return num1 + num2;&#125;; 6、使用promise简化回调小程序中的api几乎都是回调函数的方式，因此经常会照常回调里面嵌套回调的情况，这使得代码难以理解，因此可以通过promise简化回调。举个简单的例子，小程序中的图片上传。使用小程序进行图片上传的传统方式一般分为这几个步骤： 拍照或者选择相册中的图片 请求后台上传接口 提示上传成功 这样的一个步骤下来，看看代码会变成什么样子。 12345678910111213141516171819// 选择图片wx.chooseImage(&#123; success: (res)=&gt;&#123; // 上传图片 wx.uploadFile(&#123; url: 'serverUrl', filePath: res.tempPath[0], success: (res)=&gt;&#123; // 提示上传成功 wx.showToast(&#123; title: '上传成功', success: (result)=&gt;&#123; // ... &#125; &#125;); &#125;, &#125;); &#125;,&#125;); 可以看到，上面的代码由一个个回调函数嵌套，这使得代码非常难以阅读，下面来看看如何使用es6中的promise进行简化。 1234567891011121314151617181920212223// 选择图片chooseImage() &#123; return new Promise((resolve, reject) =&gt; &#123; wx.chooseImage(&#123; success: (res)=&gt;&#123; resolve(res); &#125;, &#125;); &#125;);&#125;// 上传图片uploadFile(url, path) &#123; return new Promise((resolve, reject) =&gt; &#123; wx.uploadFile(&#123; url: url, filePath: path, success: (res)=&gt;&#123; resolve(res); &#125;, &#125;); &#125;);&#125; 上面的代码将微信小程序api进行封装，并以Promise对象的形式进行返回。当我们真正进行图片上传时，可以这样操作。 1234567this.chooseImage() .then(res =&gt; &#123; return this.uploadFile(res.tempPath[0], 'serverUrl'); &#125;) .then(res =&gt; &#123; return this.showToast('上传成功!'); &#125;) 上面的代码就非常的清晰，以链式调用的方式，能够使人清楚的知道代码的每一步的作用。当然，这里只是介绍了promise在小程序中的一种应用，具体在ES6中的用法还请移步ES6文档。 总结上面只是介绍了es6特性在小程序中的应用，并没有对特性进行深入，希望能增加大家对小程序的了解程度，提高开发效率，也是对自己学习的一个小结。]]></content>
       <categories>
         <category>小程序</category>
       </categories>
       <tags>
         <tag>小程序</tag>
-        <tag>布局</tag>
-        <tag>flex</tag>
+        <tag>JavaScript</tag>
+        <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[由电影票价引发的一些思考]]></title>
+    <url>%2F2018%2F12%2F23%2Fthought-about-movie-ticket%2F</url>
+    <content type="text"><![CDATA[最近漫威动画大电影《蜘蛛侠：平行宇宙》非常火爆，作为漫威忠实粉丝，当然要去电影院欣赏一番。但是在买电影票过程中，经历了三次选座（前两次并未支付下单），三次的票价都完全不一样，这让我对其定价机制产生了一些思考。 第一次是在昨天晚上，打开支付宝，准备订购电影票，一看有特惠价格¥26.9，还不贵。正要选座下单时，被手机其他消息给干扰，退出了订购界面。 当我再次反应买电影票的时候已经是第二天上午，同样的打开支付宝，同样是显示特惠价格，但是票价为¥35，是的，我又没有买。中午的时候实在觉得无聊，还是决定去看电影，再次打开支付宝，票价显示¥30.5，然后下单支付了。 这个过程我前前后后打开了三次支付宝，这三次经历了什么，支付宝通过我的行为了解了什么，我来说说我的一些揣测。 第一次，选座未支付。支付宝知道了：这B喜欢这部电影，观看的概率很大，但是没有下单，下次他肯定还是会来买，我把价格提高一些，宰你一波。 第二次，点击影片，但未选座。支付宝心里这样想：可能是价格提的太高了，这B接受不了，过会把价格再降低一些，看你买不买。 第三次，选座支付下单。支付宝暗喜：这B终于还是买了，呵呵，机智如我。 当然，以上的都是我的一些揣测，但是不排除这种可能。 在这之前，其实也有看到有人爆料价格歧视的问题。比如有人说当自己再去搜索到同一个目的地的机票时，机票价格就比上一次看到时要贵，因为应用通过你多次访问的数据判断出，你真的要买机票了。 同样的，一些电商公司会通过你的行为数据判断你是不是价格敏感用户，例如同样的商品，如果你第二次访问价格更高时你依然下单了，说明你对价格不敏感（家里有矿），那么之后可能其他的商品也会显示更高的价格给你。 之前也在星球里谈论了关于互联网隐私的话题，如今的人工智能的发展如此迅速，机器可以通过你的行为数据快速分析出你的性格、生活习惯，从而做出相应的反馈。有时候，机器比你更加懂你。 以上的经历告诉我，买东西要省钱，果断一点就对了。看到这里，你可能觉得我屌丝一个，买个电影票都舍不得，还bb这么多。哈哈，我就是这样，自己花钱娱乐精打细算，花钱学习投资自己、请朋友吃饭玩大手大脚，你咬我啊，哈哈！]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>思考</tag>
+        <tag>电影票</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小程序实现 VR 效果]]></title>
+    <url>%2F2018%2F12%2F21%2Fmp-vr%2F</url>
+    <content type="text"><![CDATA[小程序中实现VR效果最近的工作中有一个奇葩的需求，就是更根据房间场景图，打开摄像机或者上传图片来适配不同的背景图，类似于VR的效果。 一开始百度搜索，发现小程序根本没有VR的插件，而小程序要实现VR需要使用web-view，也就是使用网页的VR插件，这样的话开发成本会比较大。 在参考了其他的一些小程序后，想到了一种替代的解决办法，也能满足需求，并且有较好的体验。先来看看效果图： 上面的效果是如何实现的呢，其实非常简单，主要使用了小程序的&lt;camera&gt;以及&lt;cover-image&gt;组件。 &lt;camera&gt;组件能够在部分中屏幕显示相机内容，而这个组件又是原生组件，层级最高，因此需要使用&lt;cover-image&gt;，才能做到将camera覆盖。正如所见，图片使用的是一个中间镂空的png图。 关键代码如下： 愿世界不再有需求。]]></content>
+      <categories>
+        <category>小程序</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+        <tag>VR</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小程序云开发之初体验]]></title>
+    <url>%2F2018%2F12%2F17%2Fmp-cloud-dev%2F</url>
+    <content type="text"><![CDATA[小程序云开发是微信最近推出的新的一项能力，它弱化了后端以及运维的概念，开发者无需搭建服务器，使用微信平台提供的api即可完成核心的业务开发。 目前提供三大基础能力支持： 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写自身业务逻辑代码 数据库：既可在小程序前端操作，也能在云函数中读写的 JSON 数据库，免费2G容量 存储：可在小程序前端上传/下载云端文件，在云开发控制台可视化管理，免费5G容量 上手体验打开微信开发者工具，新建工程，选择新建云开发模板，这里appid是必填项。 确认后，工具默认创建好工程如下： 可以看到，工程目录中多了一个cloudfunctions的文件夹，其他的与普通模板目录结构一致，而cloudfunctions文件夹其实就是用来存放云函数的。 云开发控制台点击顶部工具栏中的云开发，会弹出创建的引导，按照提示一步一步创建，这里点击开通。 填写好相应的环境名称信息，可以看到，数据库有2G的空间，另外有5G的存储，可以用来存放一些图片和其他资源，这对于一些小的应用来说是完全够用的。另外，一个小程序可以建立两个环境。 新建好的控制台就是这个样子 云数据库下面通过一个实例来学习小程序的云开发终端云数据库功能。数据库使用的是JSON 数据库，也就是我们所说的nosql，类似于MongoDB，使用键值对应的方式存储数据。 首先进入云开发控制台，选择数据库管理。新建一个集合，也就是一个数据库，输入集合名称。 然后新建一条记录，记录可以手动创建，也可以导入json或者csv数据。id默认自动生成。 那么接下来，就尝试着从小程序端读取数据库中的数据。在index.js中的onLoad函数中加入下面的一段代码 1234567891011// 创建数据库实例const db = wx.cloud.database()// 2. 构造查询语句// collection 方法获取一个集合的引用// 可以使用where 方法传入一个对象，数据库返回集合中字段等于指定值的 JSON 文档。API 也支持高级的查询条件（比如大于、小于、in 等）// get 方法会触发网络请求，往数据库取数据db.collection('user').get(&#123; success(res) &#123; console.log(res) &#125;&#125;) 保存代码，编译运行，观察控制台，发现打印出来的信息中没有数据。 不要着急，这并不是我们的代码写的有问题，而是数据库有权限限制。再次打开控制台，选择数据库权限设置。 可以看到，默认的权限是仅创建者及管理员可读写，这里我们更改为第一个选项，选择所有用户可读，仅创建者可写。再次编译运行，可以看到数据库中的内容成功的被打印出来了。 总结小程序云开发确实是一个不错的功能，大大降低了开发成本，不用再去为服务器、域名、备案等一系列开发流程而发愁，因此如果要开发一些小型的应用，首选云开发。 以上是小程序云开发之初体验，之后的文章会继续深入，持续关注。]]></content>
+      <categories>
+        <category>小程序</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+        <tag>云开发</tag>
       </tags>
   </entry>
   <entry>
@@ -30,6 +77,19 @@
         <tag>效率</tag>
         <tag>小程序</tag>
         <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小程序 Flex 布局]]></title>
+    <url>%2F2018%2F12%2F02%2Fmp-flex-layout%2F</url>
+    <content type="text"><![CDATA[在做前端开发的过程中，页面设计与排版往往成为一大拦路虎。抛开色彩的搭配不说，最让人头疼的无非就是如何让元素在水平或者垂直方向上进行布局排列，并以一定的方式对齐，使得页面显得简洁有序。 在这几周小程序开发工作当中，我也碰到了这样的问题，主要是因为自己CSS功底不扎实，只对几个常用的属性较为熟悉，因此布局起来相当吃力。每次写页面，都要先找一大堆模板，最后堆叠出来的代码我自己都看得恶心。但渐渐的，发现别人的代码中都有使用到flex布局，稍做了解后，确实好用，很快就可以自己编写出好看的页面。 1、flex布局Flex是Flexible Box的缩写，意为”弹性盒子”。传统的布局解决方案是基于盒状模型，依赖 display、position、float这些属性。使用过的人就知道，用起来很不方便，没有响应式，并且对于一些特殊布局很难实现，比如，垂直居中。 之后W3C提出了一种新的方案—-Flex布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持。下面的例子通过微信小程序实现，网页端同理。 2、布局拆解在对页面进行编码前，通常需要对布局进行拆解，这也是关键的一步，我以下面的图片为例作讲解解。 上面截图是我为某公司制作的官网小程序其中的一部分，布局并不复杂，由外至内进行分析。首先整体布局是一整行，其中有三个子项水平排列，每个子项又可再次进行拆分。 子项同样的由外至内分析，最外层为一个圆形，中间内容可以看作是一个图标和一行文字垂直居中排列，最后的组件拆解图如下。 3、编码实现首先按找布局拆解的思路，先实现三个圆形组件的水平排列。平常我们想到的方式可能是使用浮动或者绝对布局进行定位，但是这样的方式对不同屏幕大小尺寸的设备不友好，容易出现布局错乱。下面使用flex布局看看是如何实现上面效果的。 小程序端页面代码如下，主要是定义几个容器，网页端同理（将view换成div即可）。 12345&lt;view class="circle_line"&gt; &lt;view class="circle"&gt;&lt;/view&gt; &lt;view class="circle"&gt;&lt;/view&gt; &lt;view class="circle"&gt;&lt;/view&gt;&lt;/view&gt; WXSS代码如下，网页端同理。1234567891011121314.circle_line &#123; /* 定义弹性布局，默认水平排列 */ display: flex; /* 设置主轴对齐方式，space-around表示两端对齐，项目间间隔相等 */ justify-content: space-around; /* 在交叉上的对齐方式 */ align-items: center;&#125;.circle &#123; width: 100px; height: 100px; border-radius: 50%; background:linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);&#125; 这时候页面的效果就如下图所示： 首先注意的是flex布局默认排列方式是水平排列。如果对justify-content以及align-item这两个属性可能比较模糊，这里我将第一个属性的所有属性值试一遍，看看效果，另外一个同理，只不过是在交叉轴方向上的对齐方式。 有了上面布局的基础，很快的便可以将圆形内部的图标以及文字进行布局。实现思路就是将图标以及文字放入一个弹性盒子，并将排列方式设置为垂直方向，然后设置居中对齐。wxml代码：123456789101112&lt;view class="circle"&gt; ...&lt;/view&gt;&lt;view class="circle"&gt; &lt;view class="circle_icon"&gt; &lt;image class="circle_icon_image" mode="scaleToFill" src="/images/android.png" /&gt; &lt;/view&gt; &lt;view class="circle_txt"&gt;安卓开发&lt;/view&gt;&lt;/view&gt;&lt;view class="circle"&gt; ...&lt;/view&gt; wxss代码：12345678910111213141516.circle &#123; ... display: flex; flex-direction: column; align-items: center; justify-content: center;&#125;.circle_icon_image &#123; height: 30px; width: 30px;&#125;.circle_txt &#123; color: #fff; text-align: center; font-size: 13px;&#125; 最后保存，就实现下面的效果啦！ 4、总结希望上面过程，不仅仅说是学会了一个什么样的布局，最为关键的还是布局拆解的步骤，因为很多前端的编写都需要有类似的思想。 更多的相关flex布局可以去一些学习网站上做详细了解，祝学习愉快！]]></content>
+      <categories>
+        <category>小程序</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+        <tag>布局</tag>
+        <tag>flex</tag>
       </tags>
   </entry>
   <entry>
@@ -53,8 +113,8 @@
       </categories>
       <tags>
         <tag>小程序</tag>
-        <tag>学习路线</tag>
         <tag>学习资料</tag>
+        <tag>学习路线</tag>
       </tags>
   </entry>
   <entry>
