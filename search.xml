@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[「效率工具」一个指令搞定 Bilibili 和 Youtube 视频下载]]></title>
+    <url>%2F2019%2F07%2F21%2Fbilibili-youtube-download%2F</url>
+    <content type="text"><![CDATA[一个简短快捷的指令，冲破屏障，化腐朽为神奇。 做法与之前的文章《一个指令搞定百度文库》类似，不需要下载任何软件。 Bilibili打开任意一个 Bilibili 视频，点击地址栏，在“bilibili”前加上字母“i”。 在新出现的页面中右击视频，下载视频。 Youtube打开任意一个 Youtube 视频，点击地址栏，将“youtube”中的“ube”删除。 在新出现的页面选择视频下载，也可以只下载音频。]]></content>
+      <categories>
+        <category>效率工具</category>
+      </categories>
+      <tags>
+        <tag>效率</tag>
+        <tag>工具</tag>
+        <tag>网站</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[「效率工具」奶牛快传，文件传输神器]]></title>
     <url>%2F2019%2F07%2F07%2Fraw-transfer%2F</url>
     <content type="text"><![CDATA[目前常用的传文件方式存在以下痛点： 微信文件限制 100M 大小 网盘限制上传和下载速度 QQ 几乎没人用了（工作环境） 邮件在移动端接收不方便 奶牛快传很好的解决了以上问题。 工具以网站的形式存在，因此只要设备有浏览器即可使用。 同时有微信小程序版，更好适应微信生态。 速度方面，无论是上传还是下载，均无速度限制，完全依赖于用户宽带。 交互方面，操作界面极简，界面中心只留了一个大按钮，添加文件后，文件会被快速上传，随后生成该文件的下载链接、二维码及小程序码。 文件方面，普通用户一次性可传输 4G 大小的文件，文件保存72 小时，注册用户可保存 165 小时文件保存，足够日常的使用。 网站链接：http://cowtransfer.com/]]></content>
@@ -239,8 +252,8 @@
       </categories>
       <tags>
         <tag>小程序</tag>
-        <tag>学习资料</tag>
         <tag>学习路线</tag>
+        <tag>学习资料</tag>
       </tags>
   </entry>
   <entry>
