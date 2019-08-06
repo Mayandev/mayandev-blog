@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mayandev.github.io/2019/08/04/serial-i-like/</loc>
+    <loc>https://mayandev.github.io/2019/08/06/image-merge/</loc>
     
-    <lastmod>2019-08-04T07:08:43.811Z</lastmod>
+    <lastmod>2019-08-06T02:40:38.190Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://mayandev.github.io/photos/photoslist.json</loc>
     
-    <lastmod>2019-08-04T07:06:38.349Z</lastmod>
+    <lastmod>2019-08-06T02:38:49.815Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2019/08/04/serial-i-like/</loc>
+    
+    <lastmod>2019-08-04T07:08:43.811Z</lastmod>
     
   </url>
   
@@ -51,6 +58,13 @@
   </url>
   
   <url>
+    <loc>https://mayandev.github.io/2018/06/21/thoughts-about-mp-learning/</loc>
+    
+    <lastmod>2019-08-03T06:01:41.569Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mayandev.github.io/2018/05/05/thoughts-in-2018/</loc>
     
     <lastmod>2019-08-03T06:01:41.569Z</lastmod>
@@ -59,13 +73,6 @@
   
   <url>
     <loc>https://mayandev.github.io/2018/11/20/what-did-i-do-in-third-year/</loc>
-    
-    <lastmod>2019-08-03T06:01:41.569Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2018/06/21/thoughts-about-mp-learning/</loc>
     
     <lastmod>2019-08-03T06:01:41.569Z</lastmod>
     
@@ -184,13 +191,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/04/24/mp-learning/</loc>
-    
-    <lastmod>2019-08-03T06:01:41.562Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2018/11/08/mp-learning-material/</loc>
     
     <lastmod>2019-08-03T06:01:41.562Z</lastmod>
@@ -198,14 +198,21 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/12/17/mp-cloud-dev/</loc>
+    <loc>https://mayandev.github.io/2018/04/24/mp-learning/</loc>
+    
+    <lastmod>2019-08-03T06:01:41.562Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/01/25/mp-conponent-collection/</loc>
     
     <lastmod>2019-08-03T06:01:41.561Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/01/25/mp-conponent-collection/</loc>
+    <loc>https://mayandev.github.io/2018/12/17/mp-cloud-dev/</loc>
     
     <lastmod>2019-08-03T06:01:41.561Z</lastmod>
     
@@ -261,14 +268,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2017/09/28/javascript-learning-1/</loc>
+    <loc>https://mayandev.github.io/2019/06/17/graduate-thinking/</loc>
     
     <lastmod>2019-08-03T06:01:41.558Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/06/17/graduate-thinking/</loc>
+    <loc>https://mayandev.github.io/2017/09/28/javascript-learning-1/</loc>
     
     <lastmod>2019-08-03T06:01:41.558Z</lastmod>
     
@@ -289,14 +296,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/05/07/gmail-infinity/</loc>
+    <loc>https://mayandev.github.io/2019/05/08/google-io-2019/</loc>
     
     <lastmod>2019-08-03T06:01:41.557Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/05/08/google-io-2019/</loc>
+    <loc>https://mayandev.github.io/2019/05/07/gmail-infinity/</loc>
     
     <lastmod>2019-08-03T06:01:41.557Z</lastmod>
     
@@ -338,14 +345,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/10/25/baoyan-experience/</loc>
+    <loc>https://mayandev.github.io/2019/07/21/bilibili-youtube-download/</loc>
     
     <lastmod>2019-08-03T06:01:41.554Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/07/21/bilibili-youtube-download/</loc>
+    <loc>https://mayandev.github.io/2018/10/25/baoyan-experience/</loc>
     
     <lastmod>2019-08-03T06:01:41.554Z</lastmod>
     
@@ -366,14 +373,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/04/29/app-google-tasks/</loc>
+    <loc>https://mayandev.github.io/2018/06/12/a-defend-note/</loc>
     
     <lastmod>2019-08-03T06:01:41.552Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/06/12/a-defend-note/</loc>
+    <loc>https://mayandev.github.io/2018/04/29/app-google-tasks/</loc>
     
     <lastmod>2019-08-03T06:01:41.552Z</lastmod>
     
