@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mayandev.github.io/photos/photoslist.json</loc>
+    
+    <lastmod>2019-09-12T07:04:07.946Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mayandev.github.io/2019/08/26/use-mini-program-improve-effect/</loc>
     
     <lastmod>2019-08-26T02:57:31.182Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://mayandev.github.io/2019/08/26/win10-activation/</loc>
     
     <lastmod>2019-08-26T02:57:31.181Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/photos/photoslist.json</loc>
-    
-    <lastmod>2019-08-26T02:53:53.964Z</lastmod>
     
   </url>
   
@@ -86,14 +86,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/12/23/thought-about-movie-ticket/</loc>
+    <loc>https://mayandev.github.io/2019/01/13/thoughts-about-b-ge-live/</loc>
     
     <lastmod>2019-08-09T01:09:04.891Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/01/13/thoughts-about-b-ge-live/</loc>
+    <loc>https://mayandev.github.io/2018/12/23/thought-about-movie-ticket/</loc>
     
     <lastmod>2019-08-09T01:09:04.891Z</lastmod>
     
@@ -114,13 +114,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/06/16/science-fuck-net/</loc>
-    
-    <lastmod>2019-08-09T01:09:04.890Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2018/06/06/revealjs-make-ppt/</loc>
     
     <lastmod>2019-08-09T01:09:04.890Z</lastmod>
@@ -128,14 +121,21 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/03/21/python-get-mp-pic/</loc>
+    <loc>https://mayandev.github.io/2018/06/16/science-fuck-net/</loc>
+    
+    <lastmod>2019-08-09T01:09:04.890Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/05/28/python-learning/</loc>
     
     <lastmod>2019-08-09T01:09:04.889Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/05/28/python-learning/</loc>
+    <loc>https://mayandev.github.io/2019/03/21/python-get-mp-pic/</loc>
     
     <lastmod>2019-08-09T01:09:04.889Z</lastmod>
     
@@ -156,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/03/30/oracle-setup-tutorial/</loc>
-    
-    <lastmod>2019-08-09T01:09:04.888Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2019/02/20/picture-tool-site/</loc>
     
     <lastmod>2019-08-09T01:09:04.888Z</lastmod>
@@ -170,9 +163,9 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/12/14/mp-more-effectiveness/</loc>
+    <loc>https://mayandev.github.io/2018/03/30/oracle-setup-tutorial/</loc>
     
-    <lastmod>2019-08-09T01:09:04.887Z</lastmod>
+    <lastmod>2019-08-09T01:09:04.888Z</lastmod>
     
   </url>
   
@@ -185,6 +178,13 @@
   
   <url>
     <loc>https://mayandev.github.io/2019/06/06/my-paper-thanks/</loc>
+    
+    <lastmod>2019-08-09T01:09:04.887Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/12/14/mp-more-effectiveness/</loc>
     
     <lastmod>2019-08-09T01:09:04.887Z</lastmod>
     
@@ -219,13 +219,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/12/17/mp-cloud-dev/</loc>
-    
-    <lastmod>2019-08-09T01:09:04.885Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2018/01/25/mp-conponent-collection/</loc>
     
     <lastmod>2019-08-09T01:09:04.885Z</lastmod>
@@ -233,7 +226,21 @@
   </url>
   
   <url>
+    <loc>https://mayandev.github.io/2018/12/17/mp-cloud-dev/</loc>
+    
+    <lastmod>2019-08-09T01:09:04.885Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mayandev.github.io/2017/11/17/javascript-learning-6/</loc>
+    
+    <lastmod>2019-08-09T01:09:04.884Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/07/09/logo2avatar-dev-tutorial/</loc>
     
     <lastmod>2019-08-09T01:09:04.884Z</lastmod>
     
@@ -248,13 +255,6 @@
   
   <url>
     <loc>https://mayandev.github.io/2019/02/23/mp-about-microsoft/</loc>
-    
-    <lastmod>2019-08-09T01:09:04.884Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2018/07/09/logo2avatar-dev-tutorial/</loc>
     
     <lastmod>2019-08-09T01:09:04.884Z</lastmod>
     
@@ -296,7 +296,7 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/06/17/graduate-thinking/</loc>
+    <loc>https://mayandev.github.io/2019/08/06/image-merge/</loc>
     
     <lastmod>2019-08-09T01:09:04.882Z</lastmod>
     
@@ -310,7 +310,7 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/08/06/image-merge/</loc>
+    <loc>https://mayandev.github.io/2019/06/17/graduate-thinking/</loc>
     
     <lastmod>2019-08-09T01:09:04.882Z</lastmod>
     
@@ -324,14 +324,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/05/07/gmail-infinity/</loc>
+    <loc>https://mayandev.github.io/2019/05/08/google-io-2019/</loc>
     
     <lastmod>2019-08-09T01:09:04.881Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/05/08/google-io-2019/</loc>
+    <loc>https://mayandev.github.io/2019/05/07/gmail-infinity/</loc>
     
     <lastmod>2019-08-09T01:09:04.881Z</lastmod>
     
@@ -380,14 +380,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/06/12/a-defend-note/</loc>
+    <loc>https://mayandev.github.io/2018/04/29/app-google-tasks/</loc>
     
     <lastmod>2019-08-09T01:09:04.878Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/04/29/app-google-tasks/</loc>
+    <loc>https://mayandev.github.io/2018/06/12/a-defend-note/</loc>
     
     <lastmod>2019-08-09T01:09:04.878Z</lastmod>
     
