@@ -921,14 +921,14 @@
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail';
+    var guest = 'nick,mail,link';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
         el: '#comments' ,
-        verify: false,
-        notify: false,
+        verify: true,
+        notify: true,
         appId: 'VXHvttWyovWrbln4KWRLwW6F-gzGzoHsz',
         appKey: 'XxGB1GqDmeRTTp1js5oWDxNV',
         placeholder: '留下邮箱，有回复时您将收到提醒，邮箱不会被公开',
