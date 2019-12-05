@@ -29,7 +29,7 @@ photo ={
                       '<img src="https://mayandev.oss-cn-hangzhou.aliyuncs.com/blog/' + imgNameWithPattern + '?raw=true"/>' +
                     '</a>' +
                   '</div>' +
-                  // '<div class="TextInCard">' + imgName + '</div>' +  //图片下显示文件名作为说明的功能
+                  '<div class="TextInCard">' + imgName + '</div>' +  //图片下显示文件名作为说明的功能
                 '</div>'
       }
       $(".ImageGrid").append(li);
