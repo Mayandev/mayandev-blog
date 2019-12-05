@@ -3035,11 +3035,14 @@ hr {
 }
 .card {
   overflow: hidden;
-  transition: 0.3s ease-in-out;
-  border-radius: 8px;
-  background-color: #ddd;
+  border-radius:5px;
 }
 .ImageInCard img {
   padding: 0 0 0 0;
-  border-radius: 8px;
+  border-radius: 5px;
+}
+
+.TextInCard {
+  margin-top: -60px;
+  color: white;
 }
