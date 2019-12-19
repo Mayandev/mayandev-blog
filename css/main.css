@@ -1328,7 +1328,6 @@ pre .javascript .function {
 .posts-expand .post-body img {
   box-sizing: border-box;
   margin: auto;
-  padding: 3px;
 }
 .posts-expand .post-body .fancybox img {
   margin: 0 auto 25px;
@@ -1941,7 +1940,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1fa653;
+  background: #ff549a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3035,14 +3034,13 @@ hr {
 }
 .card {
   overflow: hidden;
-  border-radius:5px;
+  border-radius: 5px;
 }
 .ImageInCard img {
   padding: 0 0 0 0;
   border-radius: 5px;
 }
-
 .TextInCard {
   margin-top: -60px;
-  color: white;
+  color: #fff;
 }
