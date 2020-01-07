@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[转载 ｜ NPM install -save 和 -save-dev 命令的区别]]></title>
+    <url>%2F2020%2F01%2F07%2Fdifferences-in-npm-command%2F</url>
+    <content type="text"><![CDATA[原文地址：https://www.limitcode.com/detail/59a15b1a69e95702e0780249.html NPM install -save 和 -save-dev 命令的区别我们在使用 npm install 安装模块的模块的时候 ，一般会使用下面这几种命令形式： 1234567npm install moduleName # 安装模块到项目目录下 npm install -g moduleName # -g 的意思是将模块安装到全局，具体安装到磁盘哪个位置，要看 npm config prefix 的位置。 npm install -save moduleName # -save 的意思是将模块安装到项目目录下，并在package文件的dependencies节点写入依赖。 npm install -save-dev moduleName # -save-dev 的意思是将模块安装到项目目录下，并在package文件的devDependencies节点写入依赖。 在项目中我们应该使用四个命令中的哪个呢？这个就要视情况而定了。下面对这四个命令进行对比，看完后你就不再这么问了。 npm install moduleName 命令 安装模块到项目node_modules目录下。 不会将模块依赖写入devDependencies或dependencies 节点。 运行 npm install 初始化项目时不会下载模块。 npm install -g moduleName 命令 安装模块到全局，不会在项目 node_modules 目录中保存模块包。 不会将模块依赖写入 devDependencies 或 dependencies 节点。 运行 npm install 初始化项目时不会下载模块。 npm install -save moduleName 命令 安装模块到项目node_modules目录下。 会将模块依赖写入dependencies 节点。 运行 npm install 初始化项目时，会将模块下载到项目目录下。 运行npm install –production或者注明NODE_ENV变量值为production时，会自动下载模块到node_modules目录中。 npm install -save-dev moduleName 命令 安装模块到项目node_modules目录下。 会将模块依赖写入devDependencies 节点。 运行 npm install 初始化项目时，会将模块下载到项目目录下。 运行npm install –production或者注明NODE_ENV变量值为production时，不会自动下载模块到node_modules目录中。 总结devDependencies 节点下的模块是我们在开发时需要用的，比如项目中使用的 gulp ，压缩css、js的模块。这些模块在我们的项目部署后是不需要的，所以我们可以使用 -save-dev 的形式安装。像 express 这些模块是项目运行必备的，应该安装在 dependencies 节点下，所以我们应该使用 -save 的形式安装。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>转载</tag>
+        <tag>前端</tag>
+        <tag>node</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[第一次录音棚录歌]]></title>
     <url>%2F2020%2F01%2F06%2Ffirst-record-song%2F</url>
     <content type="text"><![CDATA[2019 年末的时候去录音棚录了一首歌，接触到了新的东西，体验下了录歌这个过程。 关于录歌：1、价格。150元-200元/小时不等（武汉地区），一小时录完一首歌完全够用了，如果精修还需要额外的付费。 2、伴奏。版权原因一般录音棚不会提供伴奏，最好提前准备好伴奏。 3、歌词。可以不用打印歌词，一般录音棚都会有电子屏显示歌词。 一些感受：录音并没有像网上看到的那样容易，整个过程下来还是有点紧张的，录完出了一身的汗。本以为准备的还不错，但是在录的过程中还是会有各种小问题，最后录出来的效果似乎也没达到自己的预期。有的地方节奏没有踩好，有的地方直接就跑调了，好在后期挽救了一些。总之，唱歌还是有技巧，需要反复练习的。 Q&amp;A:Q：为什么要录歌？A：本来是准备本科毕业拉着室友们去的，也因为一些原因没有完成。其次是想感受和体验一下这个过程，也给2019画上个句号。 Q：录完歌需要多久能拿到？A：1-3天。 Q：不会唱歌的可以去录歌吗？A：可以的，相信自己！相信调音师的能力！ Q：录完可以上传到音乐平台上吗？A：可以的，某些歌曲需要提供版权文件。 End/总之，第一次录歌过程就以此文结束了。录完歌后回去简单学习了一下「库乐队」这个音频软件，现在也能够剪辑一些音频，加一些混响了，以后可以自己录歌自己修啦～ 我也开通了一个网易云电台，如果有新的作品会上传上去，欢迎订阅！ 扫描二维码打开：]]></content>
@@ -577,18 +591,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[App推荐 | Google Tasks]]></title>
-    <url>%2F2018%2F04%2F29%2Fapp-google-tasks%2F</url>
-    <content type="text"><![CDATA[前不久，Google推出了一款移动任务管理应用Google Task，在使用2天后，写一下使用感受，并与Google同类产品Keep进行一个对比。 首先欣赏几张官方的App截图 然后来看一下官方的介绍： 翻译：通过Google Tasks移动应用程序完成更多任务。随时随地管理，捕捉和编辑您的任务，以及在所有设备上同步的待办事项。与Gmail和Google日历的集成可帮助您更快地完成任务。 经过两天的使用，这里简单的说一下感受。首先就界面来说，Tasks采用Google一直提倡的极简风格。打开App，纯白的界面，加上一颗蓝色的圆腰按钮的点缀，整体的页面显得极其的简约。 熟悉Google的童鞋应该会发现，这个App的设计风格与之前Google一直所倡导的Material Design（以下简称为MD）风格还是有一些不一样。的确，在Android9.0（Android P）还没发布预览版之前，Google一直所采用的是一种扁平化的质感设计。 光效、表面质感、运动感是MD的核心。可以看到，这种风格大部分由矩形卡片组成，同时配色突出鲜明。但是在新出的Android P中，Google改进了这种设计，称之为MD2.0。其中大量地采用圆角设计，不论是通知面板、设置还是应用图标，全部使用圆形设计。 以后会更具详细的讲解Android P与之前Android版本的区别，这里便不再做赘述，下面继续介绍Tasks的功能。 首先点击醒目的蓝色按钮，建立一个新的任务。例如：Spring大作业。点击加号日历图标可以设置截止日期，这里设置4月30号完成，并点击save。 可以到任务详细页面里增添子任务，即不同时间段的该完成的任务，然后给各个子任务设置不同的时间期限，App就将会在不同的时间对你进行相应的提示，每天应该完成哪些任务。 以上就是Tasks的主要功能，操作十分的简便，用起来很流畅，App本身的体积只有不到5M，因此不会占用很大的内存空间。而且Google自家的应用，优化做的可是相当的好，不用担心会发生卡顿的现象，也不会一直留驻后台。（PS：与Google全家桶一同食用效果更佳） Google还有一款与Tasks功能相似的App，名字叫做Keep。但是这款App不仅仅针对任务，还包括一些灵光一现的想法，可以立即使用Keep记录下来。这个应用有时间还会单独给大家介绍。]]></content>
-      <categories>
-        <category>效率工具</category>
-      </categories>
-      <tags>
-        <tag>效率</tag>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Google I/O 2018 总结]]></title>
     <url>%2F2018%2F04%2F29%2Fgoogle-io-content%2F</url>
     <content type="text"><![CDATA[Google I/O 2018大会于北京时间5月9日凌晨1点，在美国山景城Shoreline Amphitheatre(圆形剧场)举办。看了一下录播，字幕延迟，全程靠听，下面对上午的主会进行一个小结。（介绍按照时间大会顺序） Gboard（谷歌键盘） 新增莫斯电码的输入，主要方便于的残障人士的快速交流 Gmail （谷歌邮箱） 使用Material Design2，全新邮箱界面 邮箱输入自动补全 Photos （谷歌相册） AI自动整理图片 AI自动美化图片：增长曝光度，调节亮度等等 自动发送 文件图片可直接转PDF 老旧黑白照片可自动填充颜色 Assistant （谷歌助手） 6种不同的声音 持续对话，不用一直Hey，Google 加入13000儿童故事 AI智能导航 Android P （安卓9.0） 新增Dashboard，用于对App的使用进行时间管理 取消三段虚拟按键，使用类似与ios的手势操作 AI电池监控，减少30%的cpu唤醒，更省电 UI变化，状态栏、音量面板、通知栏、设置界面等 WAYMO （谷歌无人汽车） AI自动驾驶，适应各种路况 最后，很明显：All in AI.]]></content>
@@ -598,6 +600,18 @@
       <tags>
         <tag>随笔</tag>
         <tag>总结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[App推荐 | Google Tasks]]></title>
+    <url>%2F2018%2F04%2F29%2Fapp-google-tasks%2F</url>
+    <content type="text"><![CDATA[前不久，Google推出了一款移动任务管理应用Google Task，在使用2天后，写一下使用感受，并与Google同类产品Keep进行一个对比。 首先欣赏几张官方的App截图 然后来看一下官方的介绍： 翻译：通过Google Tasks移动应用程序完成更多任务。随时随地管理，捕捉和编辑您的任务，以及在所有设备上同步的待办事项。与Gmail和Google日历的集成可帮助您更快地完成任务。 经过两天的使用，这里简单的说一下感受。首先就界面来说，Tasks采用Google一直提倡的极简风格。打开App，纯白的界面，加上一颗蓝色的圆腰按钮的点缀，整体的页面显得极其的简约。 熟悉Google的童鞋应该会发现，这个App的设计风格与之前Google一直所倡导的Material Design（以下简称为MD）风格还是有一些不一样。的确，在Android9.0（Android P）还没发布预览版之前，Google一直所采用的是一种扁平化的质感设计。 光效、表面质感、运动感是MD的核心。可以看到，这种风格大部分由矩形卡片组成，同时配色突出鲜明。但是在新出的Android P中，Google改进了这种设计，称之为MD2.0。其中大量地采用圆角设计，不论是通知面板、设置还是应用图标，全部使用圆形设计。 以后会更具详细的讲解Android P与之前Android版本的区别，这里便不再做赘述，下面继续介绍Tasks的功能。 首先点击醒目的蓝色按钮，建立一个新的任务。例如：Spring大作业。点击加号日历图标可以设置截止日期，这里设置4月30号完成，并点击save。 可以到任务详细页面里增添子任务，即不同时间段的该完成的任务，然后给各个子任务设置不同的时间期限，App就将会在不同的时间对你进行相应的提示，每天应该完成哪些任务。 以上就是Tasks的主要功能，操作十分的简便，用起来很流畅，App本身的体积只有不到5M，因此不会占用很大的内存空间。而且Google自家的应用，优化做的可是相当的好，不用担心会发生卡顿的现象，也不会一直留驻后台。（PS：与Google全家桶一同食用效果更佳） Google还有一款与Tasks功能相似的App，名字叫做Keep。但是这款App不仅仅针对任务，还包括一些灵光一现的想法，可以立即使用Keep记录下来。这个应用有时间还会单独给大家介绍。]]></content>
+      <categories>
+        <category>效率工具</category>
+      </categories>
+      <tags>
+        <tag>效率</tag>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>

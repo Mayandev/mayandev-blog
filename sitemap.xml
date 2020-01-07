@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mayandev.github.io/2020/01/07/differences-in-npm-command/</loc>
+    
+    <lastmod>2020-01-07T06:31:23.968Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/photos/photoslist.json</loc>
+    
+    <lastmod>2020-01-07T06:24:56.276Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mayandev.github.io/2020/01/06/first-record-song/</loc>
     
     <lastmod>2020-01-06T10:58:34.783Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://mayandev.github.io/2019/12/25/2019-year-end/</loc>
     
     <lastmod>2020-01-06T02:53:40.641Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/photos/photoslist.json</loc>
-    
-    <lastmod>2020-01-06T02:39:54.622Z</lastmod>
     
   </url>
   
@@ -51,14 +58,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/02/19/write-right-email/</loc>
+    <loc>https://mayandev.github.io/categories/index.html</loc>
     
     <lastmod>2019-12-05T06:05:27.701Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/categories/index.html</loc>
+    <loc>https://mayandev.github.io/2019/02/19/write-right-email/</loc>
     
     <lastmod>2019-12-05T06:05:27.701Z</lastmod>
     
@@ -93,14 +100,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/05/05/thoughts-in-2018/</loc>
+    <loc>https://mayandev.github.io/2019/03/14/thoughts-about-kaoyan/</loc>
     
     <lastmod>2019-12-05T06:05:27.698Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/03/14/thoughts-about-kaoyan/</loc>
+    <loc>https://mayandev.github.io/2018/05/05/thoughts-in-2018/</loc>
     
     <lastmod>2019-12-05T06:05:27.698Z</lastmod>
     
@@ -184,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/04/20/official-account-link-mp/</loc>
+    <loc>https://mayandev.github.io/2018/03/30/oracle-setup-tutorial/</loc>
     
     <lastmod>2019-12-05T06:05:27.692Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/03/30/oracle-setup-tutorial/</loc>
+    <loc>https://mayandev.github.io/2018/04/20/official-account-link-mp/</loc>
     
     <lastmod>2019-12-05T06:05:27.692Z</lastmod>
     
@@ -254,13 +261,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/12/17/mp-cloud-dev/</loc>
-    
-    <lastmod>2019-12-05T06:05:27.687Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2018/07/15/mp-add-banner-ad/</loc>
     
     <lastmod>2019-12-05T06:05:27.687Z</lastmod>
@@ -268,7 +268,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2017/11/17/javascript-learning-6/</loc>
+    <loc>https://mayandev.github.io/2018/12/17/mp-cloud-dev/</loc>
+    
+    <lastmod>2019-12-05T06:05:27.687Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/07/09/logo2avatar-dev-tutorial/</loc>
     
     <lastmod>2019-12-05T06:05:27.686Z</lastmod>
     
@@ -282,7 +289,7 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/07/09/logo2avatar-dev-tutorial/</loc>
+    <loc>https://mayandev.github.io/2017/11/17/javascript-learning-6/</loc>
     
     <lastmod>2019-12-05T06:05:27.686Z</lastmod>
     
@@ -331,13 +338,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/05/08/google-io-2019/</loc>
-    
-    <lastmod>2019-12-05T06:05:27.683Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2018/04/29/google-io-content/</loc>
     
     <lastmod>2019-12-05T06:05:27.683Z</lastmod>
@@ -346,6 +346,13 @@
   
   <url>
     <loc>https://mayandev.github.io/2019/06/17/graduate-thinking/</loc>
+    
+    <lastmod>2019-12-05T06:05:27.683Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2019/05/08/google-io-2019/</loc>
     
     <lastmod>2019-12-05T06:05:27.683Z</lastmod>
     
@@ -366,14 +373,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/09/22/gdd-experience/</loc>
+    <loc>https://mayandev.github.io/2018/07/16/flutter-component-intro/</loc>
     
     <lastmod>2019-12-05T06:05:27.681Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/07/16/flutter-component-intro/</loc>
+    <loc>https://mayandev.github.io/2018/09/22/gdd-experience/</loc>
     
     <lastmod>2019-12-05T06:05:27.681Z</lastmod>
     
@@ -408,14 +415,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/06/22/baidu-cloud-pojie/</loc>
+    <loc>https://mayandev.github.io/2018/10/25/baoyan-experience/</loc>
     
     <lastmod>2019-12-05T06:05:27.678Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/10/25/baoyan-experience/</loc>
+    <loc>https://mayandev.github.io/2018/06/22/baidu-cloud-pojie/</loc>
     
     <lastmod>2019-12-05T06:05:27.678Z</lastmod>
     
