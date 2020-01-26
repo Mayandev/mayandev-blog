@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mayandev.github.io/2020/01/26/nCov-days-note/</loc>
+    <loc>https://mayandev.github.io/photos/photoslist.json</loc>
     
-    <lastmod>2020-01-26T07:10:37.864Z</lastmod>
+    <lastmod>2020-01-26T07:45:09.302Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/photos/photoslist.json</loc>
+    <loc>https://mayandev.github.io/photos/index.html</loc>
     
-    <lastmod>2020-01-26T06:26:24.951Z</lastmod>
+    <lastmod>2020-01-26T07:14:06.943Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2020/01/26/nCov-days-note/</loc>
+    
+    <lastmod>2020-01-26T07:10:37.864Z</lastmod>
     
   </url>
   
@@ -58,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/photos/index.html</loc>
-    
-    <lastmod>2019-12-05T06:05:27.871Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2019/02/19/write-right-email/</loc>
     
     <lastmod>2019-12-05T06:05:27.701Z</lastmod>
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/07/31/what-is-cnn/</loc>
+    <loc>https://mayandev.github.io/2019/08/26/win10-activation/</loc>
     
     <lastmod>2019-12-05T06:05:27.700Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/08/26/win10-activation/</loc>
+    <loc>https://mayandev.github.io/2019/07/31/what-is-cnn/</loc>
     
     <lastmod>2019-12-05T06:05:27.700Z</lastmod>
     
