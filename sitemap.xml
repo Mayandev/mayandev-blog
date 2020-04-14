@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mayandev.github.io/2020/04/14/webview-element/</loc>
+    <loc>https://mayandev.github.io/2020/04/14/async-await/</loc>
     
-    <lastmod>2020-04-14T06:51:44.051Z</lastmod>
+    <lastmod>2020-04-14T15:16:32.339Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://mayandev.github.io/photos/photoslist.json</loc>
     
-    <lastmod>2020-04-14T06:50:54.990Z</lastmod>
+    <lastmod>2020-04-14T15:15:37.612Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2020/04/14/webview-element/</loc>
+    
+    <lastmod>2020-04-14T06:52:03.383Z</lastmod>
     
   </url>
   
@@ -30,7 +37,7 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/categories/index.html</loc>
+    <loc>https://mayandev.github.io/2019/08/26/win10-activation/</loc>
     
     <lastmod>2020-03-18T03:20:48.586Z</lastmod>
     
@@ -44,13 +51,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/08/26/win10-activation/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.586Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2019/12/19/what-is-meaningful-life/</loc>
     
     <lastmod>2020-03-18T03:20:48.586Z</lastmod>
@@ -58,28 +58,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/07/31/what-is-cnn/</loc>
+    <loc>https://mayandev.github.io/categories/index.html</loc>
     
-    <lastmod>2020-03-18T03:20:48.585Z</lastmod>
+    <lastmod>2020-03-18T03:20:48.586Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://mayandev.github.io/2019/01/13/thoughts-about-b-ge-live/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.585Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2019/03/14/thoughts-about-kaoyan/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.585Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2019/08/26/use-mini-program-improve-effect/</loc>
     
     <lastmod>2020-03-18T03:20:48.585Z</lastmod>
     
@@ -100,6 +86,20 @@
   </url>
   
   <url>
+    <loc>https://mayandev.github.io/2019/08/26/use-mini-program-improve-effect/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.585Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2019/07/31/what-is-cnn/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.585Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mayandev.github.io/2018/06/21/thoughts-about-mp-learning/</loc>
     
     <lastmod>2020-03-18T03:20:48.585Z</lastmod>
@@ -107,7 +107,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/07/07/raw-transfer/</loc>
+    <loc>https://mayandev.github.io/2019/03/14/thoughts-about-kaoyan/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.585Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/05/28/python-learning/</loc>
     
     <lastmod>2020-03-18T03:20:48.584Z</lastmod>
     
@@ -121,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/12/23/thought-about-movie-ticket/</loc>
+    <loc>https://mayandev.github.io/2018/06/16/science-fuck-net/</loc>
     
     <lastmod>2020-03-18T03:20:48.584Z</lastmod>
     
@@ -135,13 +142,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/06/16/science-fuck-net/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.584Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2019/03/21/python-get-mp-pic/</loc>
     
     <lastmod>2020-03-18T03:20:48.584Z</lastmod>
@@ -149,28 +149,21 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/05/28/python-learning/</loc>
+    <loc>https://mayandev.github.io/2018/12/23/thought-about-movie-ticket/</loc>
     
     <lastmod>2020-03-18T03:20:48.584Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/03/17/poj-analyse/</loc>
+    <loc>https://mayandev.github.io/2019/07/07/raw-transfer/</loc>
     
-    <lastmod>2020-03-18T03:20:48.583Z</lastmod>
+    <lastmod>2020-03-18T03:20:48.584Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://mayandev.github.io/2019/02/20/picture-tool-site/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.583Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2018/03/30/oracle-setup-tutorial/</loc>
     
     <lastmod>2020-03-18T03:20:48.583Z</lastmod>
     
@@ -184,9 +177,16 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/12/21/mp-vr/</loc>
+    <loc>https://mayandev.github.io/2018/03/30/oracle-setup-tutorial/</loc>
     
-    <lastmod>2020-03-18T03:20:48.582Z</lastmod>
+    <lastmod>2020-03-18T03:20:48.583Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/03/17/poj-analyse/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.583Z</lastmod>
     
   </url>
   
@@ -198,7 +198,7 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2020/01/27/nCoV-days-note/</loc>
+    <loc>https://mayandev.github.io/2018/12/21/mp-vr/</loc>
     
     <lastmod>2020-03-18T03:20:48.582Z</lastmod>
     
@@ -219,7 +219,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/11/08/mp-learning-material/</loc>
+    <loc>https://mayandev.github.io/2020/01/27/nCoV-days-note/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.582Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/12/02/mp-flex-layout/</loc>
     
     <lastmod>2020-03-18T03:20:48.581Z</lastmod>
     
@@ -233,21 +240,7 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/12/02/mp-flex-layout/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.581Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2018/01/25/mp-conponent-collection/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.581Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2018/12/17/mp-cloud-dev/</loc>
     
     <lastmod>2020-03-18T03:20:48.581Z</lastmod>
     
@@ -268,13 +261,6 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/12/19/mp-i-collect/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.581Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mayandev.github.io/2018/07/09/logo2avatar-dev-tutorial/</loc>
     
     <lastmod>2020-03-18T03:20:48.581Z</lastmod>
@@ -282,7 +268,28 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2017/10/05/javascript-learning-4/</loc>
+    <loc>https://mayandev.github.io/2018/12/17/mp-cloud-dev/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/11/08/mp-learning-material/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2019/12/19/mp-i-collect/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2017/09/30/javascript-learning-3/</loc>
     
     <lastmod>2020-03-18T03:20:48.580Z</lastmod>
     
@@ -296,7 +303,7 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2017/09/30/javascript-learning-3/</loc>
+    <loc>https://mayandev.github.io/2017/10/05/javascript-learning-4/</loc>
     
     <lastmod>2020-03-18T03:20:48.580Z</lastmod>
     
@@ -317,14 +324,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2017/09/28/javascript-learning-1/</loc>
+    <loc>https://mayandev.github.io/2019/08/06/image-merge/</loc>
     
     <lastmod>2020-03-18T03:20:48.579Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/08/06/image-merge/</loc>
+    <loc>https://mayandev.github.io/2017/09/28/javascript-learning-1/</loc>
     
     <lastmod>2020-03-18T03:20:48.579Z</lastmod>
     
@@ -334,6 +341,48 @@
     <loc>https://mayandev.github.io/2020/03/18/interview-question-archive/</loc>
     
     <lastmod>2020-03-18T03:20:48.579Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2019/06/17/graduate-thinking/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2019/10/25/good-things-i-bought/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/07/16/flutter-component-intro/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/09/22/gdd-experience/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2019/05/07/gmail-infinity/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mayandev.github.io/2018/10/29/flutter-build-app/</loc>
+    
+    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
     
   </url>
   
@@ -352,56 +401,14 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/10/25/good-things-i-bought/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2019/05/07/gmail-infinity/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2018/09/22/gdd-experience/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2018/07/16/flutter-component-intro/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2018/10/29/flutter-build-app/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2019/06/17/graduate-thinking/</loc>
-    
-    <lastmod>2020-03-18T03:20:48.578Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mayandev.github.io/2019/09/17/first-look-hust/</loc>
+    <loc>https://mayandev.github.io/2018/08/26/explainable-recommendation/</loc>
     
     <lastmod>2020-03-18T03:20:48.577Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/08/26/explainable-recommendation/</loc>
+    <loc>https://mayandev.github.io/2019/09/17/first-look-hust/</loc>
     
     <lastmod>2020-03-18T03:20:48.577Z</lastmod>
     
@@ -415,7 +422,7 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/07/21/bilibili-youtube-download/</loc>
+    <loc>https://mayandev.github.io/2018/10/25/baoyan-experience/</loc>
     
     <lastmod>2020-03-18T03:20:48.576Z</lastmod>
     
@@ -429,21 +436,21 @@
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/10/25/baoyan-experience/</loc>
+    <loc>https://mayandev.github.io/2019/07/21/bilibili-youtube-download/</loc>
     
     <lastmod>2020-03-18T03:20:48.576Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2018/05/15/app-one-woodhan/</loc>
+    <loc>https://mayandev.github.io/2019/12/25/2019-year-end/</loc>
     
     <lastmod>2020-03-18T03:20:48.575Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mayandev.github.io/2019/12/25/2019-year-end/</loc>
+    <loc>https://mayandev.github.io/2018/05/15/app-one-woodhan/</loc>
     
     <lastmod>2020-03-18T03:20:48.575Z</lastmod>
     
