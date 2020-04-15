@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JavaScript 中的装箱与拆箱总结]]></title>
+    <url>%2F2020%2F04%2F15%2Fpack-and-unpack%2F</url>
+    <content type="text"><![CDATA[今天学习了 Winter 老师的专栏 《重学前端》，看到了「拆箱」「装箱」的概念，看完之后不是很懂。于是去查了一波资料，总结记录一下。 首先简单说说什么是装箱和拆箱。 所谓装箱，就是把基本数据类型转换为对应的引用类型的过程。而拆箱与装箱相反，即把引用类型转换为基本的数据类型。 装箱先来看看 JavaScript 的装箱过程，代码如下： 12var p1 = 3.14159;var p2 = p1.toFixed(2); // 3.14 上面的代码我定义了一个基本 Number 数据类型的变量 p1 ，它并不是一个对象，因此不应该有任何的方法，但是它任然可以调用 toFixed() 方法。这是因为 JavaScript 内部帮助我们实现了这个”装箱“的过程，实现的流程如下： 创建一个 Number 类型的实例 在实例上调用 toFixed 方法 销毁这个实例 因此，在 JavaScript 的机制中，每当读取一个基本类型的时候，后台就会创建一个对应的基本包装类型对象，从而让我们能够调用一些方法来操作这些数据。 拆箱再来看看拆箱，上面说到，拆箱就是将引用类型转为基本的数据类型。一般会通过引用类型的 valueOf() 或者 toString() 方法实现。 valueOf：Returns the primitive value of the specified object. 即返回指定对象的原始类型 看下面的代码： 123456var num = new Number(3.14);var str = new String('Hello World');console.log(typeof num); // objectconsole.log(typeof str); // objectconsole.log(typeof num.valueOf()); // numberconsole.log(typeof str.valueOf()); // string 上面的代码分别实例化了一个 Number 和 String 对象，这两个都是引用类型，通过调用 valueOf() 方法返回了原始的基本类型，这就是拆箱的过程。 对象到 String 和 Number 的转换都遵循 “先拆箱再转换” 的规则。通过拆箱转换，把对象变成基本类型，再从基本类型转换为对应的 String 或者 Number。 为了更深入的理解拆箱，举一个 Winter 老师专栏中提到的例子： 123456789var o = &#123; valueOf: () =&gt; &#123; console.log("valueOf"); return &#123;&#125; &#125;, toString: () =&gt; &#123; console.log("toString"); return &#123;&#125; &#125;&#125;o * 2// valueOf// toString// TypeError 这里定义了一个对象 o，o 重写了 Object 中的 valueOf() 和 toString() 方法；两个方法都返回一个对象，当进行 o*2 这个运算的时候，可以看见先执行了 valueOf，接下来是 toString，最后抛出了一个 TypeError，这就说明了这个拆箱转换失败了。 在 ES6 之后，还允许对象通过显式指定 @@toPrimitive Symbol 来覆盖原有的行为。 12345678910var o = &#123; [Symbol.toPrimitive]: () =&gt; &#123;console.log("toPrimitive"); return "hello" &#125;, valueOf: () =&gt; &#123; console.log("valueOf"); return &#123;&#125; &#125;, toString: () =&gt; &#123; console.log("toString"); return &#123;&#125; &#125;,&#125;console.log(o + "")// toPrimitive// hello 完]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[说说 JavaScript 中的 async 和 await]]></title>
     <url>%2F2020%2F04%2F14%2Fasync-await%2F</url>
-    <content type="text"><![CDATA[ES7 引入了 async/await，这是 JavaScript 异步编程的一个比较大的改进。我们可以像写同步代码一些编写异步代码，避免了回调地狱，同时也代码也比 Promise 更易于阅读。 同时 async 和 await 是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。 asyncasync 就是异步的意思，在函数的定义前加上 async 关键字，表示这是一个异步函数，意味着该函数的执行不会阻塞后面代码的执行。 先来看一个简单的例子： 123456async function hello() &#123; console.log('hello');&#125;hello();console.log('world'); 可以猜猜这段代码的输出顺序是什么？ 输出的顺序如下： 12helloworld 你可能要跳出来骂我了，前面不是说不会阻塞后面代码的执行么，为什么还是按顺序输出的？ 先别急着骂，容我再进一步解释。 我们先一起来看看 hello 函数的返回值是什么。 12345678async function hello() &#123; console.log('hello'); return 'hello';&#125;console.log(hello());console.log('world'); 上面的代码输出如下： 123helloPromise &#123;&lt;resolved&gt;: "hello"&#125;world hello()函数并没有指定返回值，但是默认返回了一个 Promise 对象，而 Promise 的。 emm…看到这个 Promise，似乎有些清楚了。 也就是说，async 函数返回一个 Promise 对象，因此可以使用 then 方法添加回调函数。并且 async 函数内部 return 语句返回的值，会成为 then 方法回调函数的参数。 再修改一下上面的代码： 12345678async function hello() &#123; console.log('hello before'); return 'hello after';&#125;hello().then(value =&gt; console.log(value))console.log('world'); 上面的代码输出结果： 123hello beforeworldhello after 为什么 hello after 会在 world 后输出呢？这是因为 Promise 在 JavaScript 内部的运行机制，Promise 属于「微任务」，在当前脚本代码执行完后，立刻执行的，并没有参与事件循环。 既然返回值是 Promise，那么说明函数的执行也有对应的状态，如果函数正常执行，内部调用 Promise.resolve()，如果函数有错误，则调用 Promise.reject() 返回一个 Promise 对象。 继续修改上面的代码： 12345678910async function hello(flag) &#123; if (flag) &#123; return 'hello'; &#125; else &#123; throw 'failed'; &#125;&#125;console.log(hello(true));console.log(hello(false)); 代码输出： 12Promise &#123; resolved &#125;Promise &#123; rejected &#125; awaitawait 就是等待的意思，即等待请求或者资源。await 后面可以接任何普通表达式，但一般会在 await 后面放一个返回 promise 对象的表达式。 注意 ：await 关键字只能放到 async 函数里面。 如果 await 等待的是一个 Promise，它就会阻塞后面的代码，等着 Promise 对象 resolve，然后得到 resolve 的值，作为 await 表达式的运算结果。 看到「阻塞」两个字，心里咯噔一下。尼玛，这一阻塞，函数外的代码不会也暂停执行么。 这个你不用担心，这就是 await 必须用在 async 函数中的原因。async 函数调用不会造成阻塞，就像上文所描述的。它内部所有的阻塞都被封装在一个 Promise 对象中异步执行。 先来看下面的代码： 12345678910111213141516function delay(seconds) &#123; return new Promise((resolve, reject) =&gt; &#123; setTimeout(() =&gt; &#123; resolve(seconds) &#125;, seconds); &#125;);&#125;async function hello() &#123; console.log('hello'); let result = await delay(2000); console.log(result);&#125;hello();console.log('world'); 上面定义了一个 delay 函数，接受一个 seconds 参数。函数返回一个 Promise 对象，这个 Promise 对象传入的是一个定时器。 然后在 hello函数中去调用 delay 函数，指定 await 关键字。当代码执行到result 这一行是，会阻塞 2 秒钟。等 Promise 的 resolve，返回执行结果，然后赋值给 result，代码才开始继续执行，执行下一行的 console.log 语句。 输出结果如下： 1234helloworld// 两秒后...2000 这样我们就以同步代码的方式编写了一段异步请求的函数，如果遇到多个异步的代码，await 更能体现出写法上的可读性。 例如下面的代码： 1234567async function hello() &#123; console.log('hello'); let result1 = await delay(2000); let result2 = await delay(3000); let result3 = await delay(4000); console.log(result1+result2+result3);&#125; 如果用 Promise ： 123456789delay(2000).then(res=&gt; &#123; console.log(res); return delay(3000);&#125;).then(res =&gt; &#123; console.log(res); return delay(4000);&#125;).then(res =&gt; &#123; console.log(res);&#125;) 可以看到，使用 await 写异步代码真的非常的方便，而且代码的可读性非常的好，也没有回调地狱了，小伙伴们赶紧用起来。]]></content>
+    <content type="text"><![CDATA[ES7 引入了 async/await，这是 JavaScript 异步编程的一个比较大的改进。我们可以像写同步代码一些编写异步代码，避免了回调地狱，同时也代码也比 Promise 更易于阅读。 async 和 await 也是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。 asyncasync 就是异步的意思，在函数的定义前加上 async 关键字，表示这是一个异步函数，意味着该函数的执行不会阻塞后面代码的执行。 先来看一个简单的例子： 123456async function hello() &#123; console.log('hello');&#125;hello();console.log('world'); 可以猜猜这段代码的输出顺序是什么？ 输出的顺序如下： 12helloworld 你可能要跳出来骂我了，前面不是说不会阻塞后面代码的执行么，为什么还是按顺序输出的？ 先别急着骂，容我再进一步解释。 我们先一起来看看 hello 函数的返回值是什么。 12345678async function hello() &#123; console.log('hello'); return 'hello';&#125;console.log(hello());console.log('world'); 上面的代码输出如下： 123helloPromise &#123;&lt;resolved&gt;: "hello"&#125;world hello()函数并没有指定返回值，但是默认返回了一个 Promise 对象，而 Promise 的。 emm…看到这个 Promise，似乎有些清楚了。 也就是说，async 函数返回一个 Promise 对象，因此可以使用 then 方法添加回调函数。并且 async 函数内部 return 语句返回的值，会成为 then 方法回调函数的参数。 再修改一下上面的代码： 12345678async function hello() &#123; console.log('hello before'); return 'hello after';&#125;hello().then(value =&gt; console.log(value))console.log('world'); 上面的代码输出结果： 123hello beforeworldhello after 为什么 hello after 会在 world 后输出呢？这是因为 Promise 在 JavaScript 内部的运行机制，Promise 属于「微任务」，在当前脚本代码执行完后，立刻执行的，并没有参与事件循环。 既然返回值是 Promise，那么说明函数的执行也有对应的状态，如果函数正常执行，内部调用 Promise.resolve()，如果函数有错误，则调用 Promise.reject() 返回一个 Promise 对象。 继续修改上面的代码： 12345678910async function hello(flag) &#123; if (flag) &#123; return 'hello'; &#125; else &#123; throw 'failed'; &#125;&#125;console.log(hello(true));console.log(hello(false)); 代码输出： 12Promise &#123; resolved &#125;Promise &#123; rejected &#125; awaitawait 就是等待的意思，即等待请求或者资源。await 后面可以接任何普通表达式，但一般会在 await 后面放一个返回 promise 对象的表达式。 注意 ：await 关键字只能放到 async 函数里面。 如果 await 等待的是一个 Promise，它就会阻塞后面的代码，等着 Promise 对象 resolve，然后得到 resolve 的值，作为 await 表达式的运算结果。 看到「阻塞」两个字，心里咯噔一下。尼玛，这一阻塞，函数外的代码不会也暂停执行么。 这个你不用担心，这就是 await 必须用在 async 函数中的原因。async 函数调用不会造成阻塞，就像上文所描述的。它内部所有的阻塞都被封装在一个 Promise 对象中异步执行。 先来看下面的代码： 12345678910111213141516function delay(seconds) &#123; return new Promise((resolve, reject) =&gt; &#123; setTimeout(() =&gt; &#123; resolve(seconds) &#125;, seconds); &#125;);&#125;async function hello() &#123; console.log('hello'); let result = await delay(2000); console.log(result);&#125;hello();console.log('world'); 上面定义了一个 delay 函数，接受一个 seconds 参数。函数返回一个 Promise 对象，这个 Promise 对象传入的是一个定时器。 然后在 hello函数中去调用 delay 函数，指定 await 关键字。当代码执行到result 这一行是，会阻塞 2 秒钟。等 Promise 的 resolve，返回执行结果，然后赋值给 result，代码才开始继续执行，执行下一行的 console.log 语句。 输出结果如下： 1234helloworld// 两秒后...2000 这样我们就以同步代码的方式编写了一段异步请求的函数，如果遇到多个异步的代码，await 更能体现出写法上的可读性。 例如下面的代码： 1234567async function hello() &#123; console.log('hello'); let result1 = await delay(2000); let result2 = await delay(3000); let result3 = await delay(4000); console.log(result1+result2+result3);&#125; 如果用 Promise ： 123456789delay(2000).then(res=&gt; &#123; console.log(res); return delay(3000);&#125;).then(res =&gt; &#123; console.log(res); return delay(4000);&#125;).then(res =&gt; &#123; console.log(res);&#125;) 可以看到，使用 await 写异步代码真的非常的方便，而且代码的可读性非常的好，也没有回调地狱了，小伙伴们赶紧用起来。]]></content>
       <categories>
         <category>前端</category>
       </categories>
@@ -455,8 +467,8 @@
       </categories>
       <tags>
         <tag>小程序</tag>
-        <tag>学习路线</tag>
         <tag>学习资料</tag>
+        <tag>学习路线</tag>
       </tags>
   </entry>
   <entry>
@@ -643,18 +655,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[App推荐 | Google Tasks]]></title>
-    <url>%2F2018%2F04%2F29%2Fapp-google-tasks%2F</url>
-    <content type="text"><![CDATA[前不久，Google推出了一款移动任务管理应用Google Task，在使用2天后，写一下使用感受，并与Google同类产品Keep进行一个对比。 首先欣赏几张官方的App截图 然后来看一下官方的介绍： 翻译：通过Google Tasks移动应用程序完成更多任务。随时随地管理，捕捉和编辑您的任务，以及在所有设备上同步的待办事项。与Gmail和Google日历的集成可帮助您更快地完成任务。 经过两天的使用，这里简单的说一下感受。首先就界面来说，Tasks采用Google一直提倡的极简风格。打开App，纯白的界面，加上一颗蓝色的圆腰按钮的点缀，整体的页面显得极其的简约。 熟悉Google的童鞋应该会发现，这个App的设计风格与之前Google一直所倡导的Material Design（以下简称为MD）风格还是有一些不一样。的确，在Android9.0（Android P）还没发布预览版之前，Google一直所采用的是一种扁平化的质感设计。 光效、表面质感、运动感是MD的核心。可以看到，这种风格大部分由矩形卡片组成，同时配色突出鲜明。但是在新出的Android P中，Google改进了这种设计，称之为MD2.0。其中大量地采用圆角设计，不论是通知面板、设置还是应用图标，全部使用圆形设计。 以后会更具详细的讲解Android P与之前Android版本的区别，这里便不再做赘述，下面继续介绍Tasks的功能。 首先点击醒目的蓝色按钮，建立一个新的任务。例如：Spring大作业。点击加号日历图标可以设置截止日期，这里设置4月30号完成，并点击save。 可以到任务详细页面里增添子任务，即不同时间段的该完成的任务，然后给各个子任务设置不同的时间期限，App就将会在不同的时间对你进行相应的提示，每天应该完成哪些任务。 以上就是Tasks的主要功能，操作十分的简便，用起来很流畅，App本身的体积只有不到5M，因此不会占用很大的内存空间。而且Google自家的应用，优化做的可是相当的好，不用担心会发生卡顿的现象，也不会一直留驻后台。（PS：与Google全家桶一同食用效果更佳） Google还有一款与Tasks功能相似的App，名字叫做Keep。但是这款App不仅仅针对任务，还包括一些灵光一现的想法，可以立即使用Keep记录下来。这个应用有时间还会单独给大家介绍。]]></content>
-      <categories>
-        <category>效率工具</category>
-      </categories>
-      <tags>
-        <tag>效率</tag>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Google I/O 2018 总结]]></title>
     <url>%2F2018%2F04%2F29%2Fgoogle-io-content%2F</url>
     <content type="text"><![CDATA[Google I/O 2018大会于北京时间5月9日凌晨1点，在美国山景城Shoreline Amphitheatre(圆形剧场)举办。看了一下录播，字幕延迟，全程靠听，下面对上午的主会进行一个小结。（介绍按照时间大会顺序） Gboard（谷歌键盘） 新增莫斯电码的输入，主要方便于的残障人士的快速交流 Gmail （谷歌邮箱） 使用Material Design2，全新邮箱界面 邮箱输入自动补全 Photos （谷歌相册） AI自动整理图片 AI自动美化图片：增长曝光度，调节亮度等等 自动发送 文件图片可直接转PDF 老旧黑白照片可自动填充颜色 Assistant （谷歌助手） 6种不同的声音 持续对话，不用一直Hey，Google 加入13000儿童故事 AI智能导航 Android P （安卓9.0） 新增Dashboard，用于对App的使用进行时间管理 取消三段虚拟按键，使用类似与ios的手势操作 AI电池监控，减少30%的cpu唤醒，更省电 UI变化，状态栏、音量面板、通知栏、设置界面等 WAYMO （谷歌无人汽车） AI自动驾驶，适应各种路况 最后，很明显：All in AI.]]></content>
@@ -664,6 +664,18 @@
       <tags>
         <tag>随笔</tag>
         <tag>总结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[App推荐 | Google Tasks]]></title>
+    <url>%2F2018%2F04%2F29%2Fapp-google-tasks%2F</url>
+    <content type="text"><![CDATA[前不久，Google推出了一款移动任务管理应用Google Task，在使用2天后，写一下使用感受，并与Google同类产品Keep进行一个对比。 首先欣赏几张官方的App截图 然后来看一下官方的介绍： 翻译：通过Google Tasks移动应用程序完成更多任务。随时随地管理，捕捉和编辑您的任务，以及在所有设备上同步的待办事项。与Gmail和Google日历的集成可帮助您更快地完成任务。 经过两天的使用，这里简单的说一下感受。首先就界面来说，Tasks采用Google一直提倡的极简风格。打开App，纯白的界面，加上一颗蓝色的圆腰按钮的点缀，整体的页面显得极其的简约。 熟悉Google的童鞋应该会发现，这个App的设计风格与之前Google一直所倡导的Material Design（以下简称为MD）风格还是有一些不一样。的确，在Android9.0（Android P）还没发布预览版之前，Google一直所采用的是一种扁平化的质感设计。 光效、表面质感、运动感是MD的核心。可以看到，这种风格大部分由矩形卡片组成，同时配色突出鲜明。但是在新出的Android P中，Google改进了这种设计，称之为MD2.0。其中大量地采用圆角设计，不论是通知面板、设置还是应用图标，全部使用圆形设计。 以后会更具详细的讲解Android P与之前Android版本的区别，这里便不再做赘述，下面继续介绍Tasks的功能。 首先点击醒目的蓝色按钮，建立一个新的任务。例如：Spring大作业。点击加号日历图标可以设置截止日期，这里设置4月30号完成，并点击save。 可以到任务详细页面里增添子任务，即不同时间段的该完成的任务，然后给各个子任务设置不同的时间期限，App就将会在不同的时间对你进行相应的提示，每天应该完成哪些任务。 以上就是Tasks的主要功能，操作十分的简便，用起来很流畅，App本身的体积只有不到5M，因此不会占用很大的内存空间。而且Google自家的应用，优化做的可是相当的好，不用担心会发生卡顿的现象，也不会一直留驻后台。（PS：与Google全家桶一同食用效果更佳） Google还有一款与Tasks功能相似的App，名字叫做Keep。但是这款App不仅仅针对任务，还包括一些灵光一现的想法，可以立即使用Keep记录下来。这个应用有时间还会单独给大家介绍。]]></content>
+      <categories>
+        <category>效率工具</category>
+      </categories>
+      <tags>
+        <tag>效率</tag>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>

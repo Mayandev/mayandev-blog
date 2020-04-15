@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="ES7 引入了 async/await，这是 JavaScript 异步编程的一个比较大的改进。我们可以像写同步代码一些编写异步代码，避免了回调地狱，同时也代码也比 Promise 更易于阅读。 同时 async 和 await 是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。 a">
+<meta name="description" content="ES7 引入了 async/await，这是 JavaScript 异步编程的一个比较大的改进。我们可以像写同步代码一些编写异步代码，避免了回调地狱，同时也代码也比 Promise 更易于阅读。 async 和 await 也是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。 asy">
 <meta name="keywords" content="前端,JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="说说 JavaScript 中的 async 和 await">
 <meta property="og:url" content="https://mayandev.github.io/2020/04/14/async-await/index.html">
 <meta property="og:site_name" content="Mayandev&#39;s Blog">
-<meta property="og:description" content="ES7 引入了 async/await，这是 JavaScript 异步编程的一个比较大的改进。我们可以像写同步代码一些编写异步代码，避免了回调地狱，同时也代码也比 Promise 更易于阅读。 同时 async 和 await 是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。 a">
+<meta property="og:description" content="ES7 引入了 async/await，这是 JavaScript 异步编程的一个比较大的改进。我们可以像写同步代码一些编写异步代码，避免了回调地狱，同时也代码也比 Promise 更易于阅读。 async 和 await 也是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。 asy">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-14T15:16:32.339Z">
+<meta property="og:updated_time" content="2020-04-14T15:20:32.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="说说 JavaScript 中的 async 和 await">
-<meta name="twitter:description" content="ES7 引入了 async/await，这是 JavaScript 异步编程的一个比较大的改进。我们可以像写同步代码一些编写异步代码，避免了回调地狱，同时也代码也比 Promise 更易于阅读。 同时 async 和 await 是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。 a">
+<meta name="twitter:description" content="ES7 引入了 async/await，这是 JavaScript 异步编程的一个比较大的改进。我们可以像写同步代码一些编写异步代码，避免了回调地狱，同时也代码也比 Promise 更易于阅读。 async 和 await 也是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。 asy">
 
 
 
@@ -339,7 +339,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-04-14T23:16:32+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2020-04-14T23:20:32+08:00">
                 2020-04-14
               </time>
             
@@ -448,7 +448,7 @@
 
       
         <p>ES7 引入了 async/await，这是 JavaScript 异步编程的一个比较大的改进。我们可以像写同步代码一些编写异步代码，避免了回调地狱，同时也代码也比 Promise 更易于阅读。</p>
-<p>同时 async 和 await 是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。</p>
+<p>async 和 await 也是面试经常被问到的东西，之前一直只限于会用，并不太理解内部的实现原理。今天就来好好探究探究，JavaScript 中的 async 和 await 到底是怎么工作的。</p>
 <h3 id="async"><a href="#async" class="headerlink" title="async"></a>async</h3><p>async 就是异步的意思，在函数的定义前加上 async 关键字，表示这是一个异步函数，意味着该函数的执行不会阻塞后面代码的执行。</p>
 <p>先来看一个简单的例子：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'hello'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">hello();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'world'</span>);</span><br></pre></td></tr></table></figure>
@@ -570,6 +570,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2020/04/15/pack-and-unpack/" rel="prev" title="JavaScript 中的装箱与拆箱总结">
+                JavaScript 中的装箱与拆箱总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -649,7 +653,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">64</span>
+                  <span class="site-state-item-count">65</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -766,7 +770,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">82.2k</span>
+    <span title="Site words total count">82.9k</span>
   
 </div>
 
