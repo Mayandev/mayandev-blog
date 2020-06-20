@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[「同学在哪儿」小程序原型设计稿]]></title>
+    <url>%2F2020%2F06%2F20%2Fmini-app-design%2F</url>
+    <content type="text"><![CDATA[首页 创建班级 加入班级，填写去向 班级详情页 地图展示同学位置]]></content>
+      <tags>
+        <tag>设计</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CSS 中的 transform-origin 属性]]></title>
     <url>%2F2020%2F05%2F09%2Ftransform-origin%2F</url>
     <content type="text"><![CDATA[今天看到了 transform-origin 这个属性，不知道它的作用，遂总结整理一下。 transform-origin CSS 属性可以让元素更改一个元素变形的原点，举个很简单的例子： 123456789101112131415161718&lt;style&gt;.outer &#123; border: 1px solid red; margin-top: 50px;&#125;.square &#123; width: 100px; height: 100px; background-color: #aaaaaa; color: #fff; transform: rotate(45deg);&#125;&lt;/style&gt;&lt;body&gt; &lt;div class="outer"&gt; &lt;div class="square"&gt;Square&lt;/div&gt; &lt;/div&gt;&lt;/body&gt; 上面的例子就是一个旋转的正方形，可以看到默认是以正方形的中心点进行旋转。 而 transform-origin 就是改变其变形原点，也就是 transform 的中心，例如我将 square 设置为以左上角顶点为旋转原点。 添加一行 CSS 代码如下： 1transform-origin: top left; 效果如下： 更多的属性可以查看 MDN 的文档。]]></content>
