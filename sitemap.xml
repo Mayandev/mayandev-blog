@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.mayandev.top/about/index.html</loc>
+    
+    <lastmod>2022-02-14T03:11:48.114Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.mayandev.top/2022/02/10/tool/product-2021/</loc>
     
     <lastmod>2022-02-10T09:21:39.200Z</lastmod>
@@ -73,13 +80,6 @@
   
   <url>
     <loc>https://blog.mayandev.top/2021/01/16/work/internship-in-bytedance/</loc>
-    
-    <lastmod>2021-11-30T13:24:38.209Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.mayandev.top/about/index.html</loc>
     
     <lastmod>2021-11-30T13:24:38.209Z</lastmod>
     
